@@ -18,4 +18,9 @@ python3 rule-based-extractor.py path_to_text
 python3 supervised-model-extractor.py path_to_text
 ```
 
+You can test on one of the NLP articles we converted to text files, to evaluate our tool:
+```
+python3 supervised-model-extractor.py test2/N18-2008.txt
+```
+
 
