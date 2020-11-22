@@ -1,0 +1,3270 @@
+pattern,pilot
+N,annotations
+N N,emotion recognition
+A N,emotional recognition
+A N N,speech-based emotion recognition
+A N N,automated emotion recognition
+N N N,speech emotion recognition
+N N N,emotion recognition system
+A N N,uncompensated emotion recognition
+A N N,automatic emotion recognition
+N N N,emotion recognition method
+N N N,emotion recognition task
+N,corpus
+N,vector
+N,dataset
+N N,data set
+N,classifier
+N,algorithm
+N,annotators
+A N,neutral speech
+A C A N,neutral and emotional speech
+A C A N,emotional and neutral speech
+A N P N,neutral speech of a speaker
+N,valence
+A N,emotional speech
+N N,feature vector
+N N N,feature vector quantization
+A N N,37-dimensional feature vector
+N N,emotion detection
+N N N,emotion cause detection
+N N N,emotion detection experiments
+N N N,emotion detection models
+A N N,automatic emotion detection
+N N,emotion extraction
+N N N,Emotion cause extraction
+N N N,emotion extraction task
+A N,basic emotions
+N,EmoDS
+N N,speech signal
+N N N,speech signal features
+N,hashtags
+N N,emotion category
+A N,emotional categories
+N N,gender detection
+A N N,automatic gender detection
+N N,emotion classification
+N N N,emotion classification method
+N N,emotion intensity
+N C N P N,intensity or degree of emotion
+N N,emotion annotations
+N N,excitation source
+N N N,excitation source information
+N N N,excitation source component
+N N N,excitation source features
+N N,target terms
+N,arousal
+N N,training data
+N N,dialogue systems
+A N N,interactive dialogue system
+A N N,emotional dialogue system
+A N N,vocal tract system
+N N,word embeddings
+N N N,word embeddings models
+N,MFCC
+N,recognizer
+A N,primary emotions
+N,polarity
+N,subset
+N N,feature set
+N,realization
+A N,emotional words
+A A N,strong emotional words
+N,LSTM
+N N,affect lexicons
+N N N,WordNet Affect Lexicon
+N,behavior
+N,datasets
+N N,recognition system
+A,binary
+A N,shared task
+N N,seed words
+N N N,Seed Word Selection
+N N,recognition rate
+A N N,class-wise recognition rate
+A N N,average recognition rate
+N N,feature extraction
+N N,feature selection
+N N N,feature selection technique
+N N,extraction task
+A N,experimental results
+A N N N,gender-independent emotion recognition system
+A N N N,basic emotion recognition system
+N N,seed lexicon
+A N N,full seed lexicon
+A N N,limited seed lexicons
+N N,test set
+N N,emotion expressions
+A N,emotional expression
+A N N,non-verbal emotion expressions
+A N N,complicated emotion expressions
+A N,automatic evaluation
+A C A N,automatic and human evaluations
+N,formant
+A,seq2seq
+N N,ECPE task
+N N,query term
+N N N,Hashtag Query Term
+N N,emotion classes
+A N,emotional classes
+N N,emotion-cause pair
+N N N,emotion-cause pair extraction
+A N,hidden state
+A A N,previous hidden state
+N,LPCC
+N,Inter-EC
+N,multi-task
+N N,multi-label task
+N P N,intensity of emotion
+N N,emotion corpus
+N N N,emotion cause corpus
+A N N,context-based emotion corpus
+A N,Mechanical Turk
+N,Turkers
+N,COHA
+N,LFPC
+N N,training set
+A N N,limited train set
+N N N,Training set size
+A N,selected features
+A N,future work
+N N,emotion classifier
+A N N,sequence-level emotion classifier
+A N,human evaluation
+N,Inter-CE
+N,GRNNs
+A N,distant supervision
+N N,emotion labels
+A N,emotional labels
+N P A N,label of non-verbal emotion
+N N,emotion types
+N N,emotion model
+A N N,PNN-based emotion model
+N,BLEU
+N N,compensation transformation
+A N N,nonlinear compensation transformation
+N N,intensity scores
+A N N,gold intensity scores
+N N,AANN models
+N N,time step
+N N,gender information
+A N N,correct gender information
+A N,relevant features
+N,SVDPPMI
+A N,Linear Prediction
+A,discrete
+N,amplitude
+A N,deep learning
+N N N,word emotion induction
+N,bigrams
+N,unigrams
+N N,recognition accuracy
+N P N N,accuracy of the emotion recognition
+A N,non-verbal channels
+N,decoder
+N,readability
+N N,generation process
+N N N,response generation process
+N N,ground truth
+N N,emotion analysis
+N N,feature groups
+A N,semantic orientation
+A A N,negative semantic orientation
+A A N,positive semantic orientation
+N N,emotion lexicon
+A N N,external emotion lexicon
+A N,historical language
+N,keywords
+A N,generative models
+A N,lexicon-based attention
+A N,human judge
+N N,sentiment analysis
+N N,response generation
+A N,outer set
+A A N,intermediate outer set
+A N N,natural language generation
+R,non-verbally
+N,setup
+A,pre-trained
+N,feeler
+N,MFCCs
+N N,feature engineering
+N N,development set
+N,HMMs
+N N,gold standard
+A N N,historical gold standard
+N N,dialogue manager
+N N,emotion dimensions
+A N N,primary emotion dimensions
+N N,input post
+A N,General Inquirer
+N N,attention mechanism
+A N N,lexicon-based attention mechanism
+A N,emotional meaning
+A N,emotional shade
+N A N,default emotional shades
+A N,seq2seq framework
+N N,classification tasks
+N N,emotion processing
+N N,majority class
+N N,evaluation model
+A N N,automatic evaluation model
+N C N N,extraction and cause extraction
+N,encoder
+N,activation
+N N,classification accuracy
+A A N,recurrent neural networks
+N N,emotion keyword
+N,Chatbot
+N N,head words
+N P N,set of emotion
+N N,emotion set
+N P A N,set of basic emotions
+A,observed
+A,4-tuple
+A N,specific emotion
+A,gender-independent
+A N,F1 score
+N,tuples
+A N N N,vocal tract system information
+A,sequential
+N N N,word choice question
+N N,Pearson correlation
+N N,emotion score
+N N,recognition results
+N N N,recognition accuracy results
+N,adverbs
+A N,prosodic features
+A A N,Conventional Prosodic Features
+A N,conversational agents
+N,validation
+N N,emotion clause
+N N,speech features
+A N N,selected speech features
+A N,spatial relations
+N N,compression layer
+N,dialog
+N N,machine translation
+A N N,neural machine translation
+A,supervised
+N,SGNS
+N N,speech recognition
+N A N,Speech Emotional Recognition
+A N N,automatic speech recognition
+N P N,state of the speaker
+A N P N,emotional state of a speaker
+A,discriminative
+N N,intensity level
+N N,LP residual
+A,numerical
+N N,induction algorithms
+N N N,lexicon induction algorithms
+N N,thesaurus category
+A N,lexical item
+N,residual
+N N,test data
+A N,human judgment
+N N,emotion hashtags
+N,lexicon
+N N,case frame
+A,synchronic
+A N,empirical study
+A N,human annotations
+A N N,non-verbal communication channels
+N,Affective Tweets
+A N,contextual information
+N,CECG
+N N,emotion definition
+A,evaluative
+N N,body movements
+N N,language stages
+A N N,historical language stages
+A N,average accuracy
+N P N,theory of emotion
+N N,emotion theories
+A N P N,psychological theory of emotion
+N,PARASIMNUM
+N,EASC
+N N,regression model
+N N,vector quantization
+N,Emo-prepend
+N,GCIs
+N,regularization
+N N,sentence planning
+A N,acoustic features
+A N,hidden layers
+A N,bestñworst scaling
+N,Bi-LSTM
+N N,evaluation period
+N N,output layer
+A N,explicit emotions
+N,preprocessing
+A N,native speakers
+A N,semantic frame
+A N,emotional sentences
+N,epochs
+N,4-tuples
+N,sub-tasks
+N N,word vectors
+N N,text-to-speech synthesis
+N,Bravo-Marquez
+A N N N,neutral speech AANN models
+N N,emotion representation
+N N,emotion feature
+A,384-dimensional
+N N,pilot experiments
+N,prosody
+A N,physical sensations
+N N,output probability
+N N,dialog systems
+N,subcorpus
+N,MOGA
+A N N,traditional ECE task
+A N,baseline model
+N N,Multi-task Learning
+N N,emotion information
+A N,emotional information
+A N,fine-grained emotions
+A N,Individual Emotion
+N N,annotation study
+N,iterations
+N,dropout
+A A N,Convolutional Neural Network
+N,perplexity
+N N,sentiment scores
+N N,classification problem
+A N N,binary classification problem
+N N,machine learning
+A N N,text-based emotion prediction
+A N,genetic algorithm
+N A N,Multi-Criteria Genetic Algorithm
+A A N,multi-objective genetic algorithm
+A N,final position
+A N,relative improvement
+N N,classification term
+N N N,emotion classification term
+N N,test utterance
+A C A N,male and female emotions
+N P N N,sets of seed words
+A N N N,vocal tract system component
+A N,meaningful responses
+N,LPCs
+N N,multi-label problem
+N N,word similarity
+N C N N,emotion and sentiment recognition
+N P N,attitude of the speaker
+A N P N,emotional attitudes of the speaker
+A N,binary classification
+A N,emotional attitude
+A N,random sample
+N N,amplitude power
+A N N,average amplitude power
+A N,contemporary language
+A N,Pareto set
+N P N,order of magnitude
+N N,emotion studies
+N P N,types of emotions
+A N P N,fine-grained types of emotions
+N N,VAD dimensions
+N N,recombination types
+A,hierarchical
+A N,automated metrics
+A N,automatic emotion
+A,best-worst
+N,chatbots
+A N,discrete categories
+N P N,annotation of emotion
+N P A N,database of emotional speech
+N,tuple
+N N,dialogue dataset
+A N N,Empathetic Dialogue dataset
+N,RastaPLP
+N P N,degree of emotion
+A N,dependent view
+A N,independent view
+A,categorical
+N N,recognition method
+N N,processing time
+A,nonlinear
+N N,emotion prediction
+N N,NLP applications
+A N N,practical NLP applications
+N N,annotation project
+N N N,data annotation project
+N N,LP model
+N P N,quality of annotations
+A N,emotional connotations
+N N,input sentence
+N N,word n-grams
+N N,parameter tuning
+N,quartile
+A N,37-dimensional feature
+A N,lexical content
+N N,valence emotions
+A N,open domain
+N N,recall rate
+A A N,stochastic gradient descent
+A A N N,Convolutional Neural Network model
+A N,compositional representation
+A N,baseline system
+N N,Classification results
+N N N,emotion speech database
+A N N,emotional speech database
+N N,speech characteristics
+A,boolean
+N N N,Naïve Bayes classifier
+A N,neutral words
+N N,world model
+A,predictive
+N V A,word is closest
+N N,development data
+R,empirically
+A N N,automatic storytelling systems
+A N,weighted sum
+A N P N,weighted sum of embeddings
+N P N,kinds of emotion
+N,EmoEmb
+N P N N,channels of emotion expressions
+N V A,reply is preferred
+N N,Micro F1
+A N,lower layer
+A N,random forest
+N,CNNs
+N N,Macro F1
+N N,BOW approach
+A A N N,simple content BOW approach
+N N,softmax layer
+N,reproducibility
+A N,human annotators
+N N,evaluation method
+A N,forward selection
+A,non-emotional
+N,mapping
+N,hearers
+N N,emotion vector
+N,fitness-values
+N P N,parts of speech
+A N,maximum pitch
+A,uncompensated
+A,speaker-specific
+A N,glottal closure
+A N N,natural language processing
+N N N,support vector machine
+A N,psychological theory
+N N,regression algorithms
+N P N,percentage of times
+N C N N,arm and hand gesture
+A N,affective norms
+A N,emotional distance
+A N,fundamental frequency
+N,RNNs
+A,attitudinal
+N,SAVEE
+N N,vocabulary size
+N C N N,gender and emotion recognition
+N,RANDOMWALKNUM
+A N,random walk
+N,RMDS
+N N,speech rate
+N N,speech segments
+A N N,pretrained language models
+A N,neutral sentences
+N,requester
+N,derivations
+N N,likelihood probability
+N P N,result of the experiments
+N N,judgment model
+A N,clause-level Bi-LSTM
+A N,raw audio
+N,interjections
+A N N,high SNR regions
+A,semantic
+A N,emotional utterances
+A,fine-tuned
+N N,generation system
+N N N,language generation systems
+A,Inter-EC-Bound
+N P N,model of emotions
+A N P N,categorical model of emotions
+N,F-score
+A N,emotional responses
+A N N N,natural language generation systems
+A N P N,Semantic orientation of words
+A N,negative sampling
+A N,Cartesian product
+A A N,exact textual positions
+A N N,highest recognition rate
+A N,sequential model
+A N,Computational Linguistics
+A N N,full test set
+N N,voting results
+A N N,human voting results
+N A N,energy related features
+N N,precision score
+N N,language period
+N N,LPCC components
+N N,feature space
+A N,diachronic experiments
+N N,PLP coefficients
+R,temporally
+N N,extraction performance
+N P N N,performance of emotion extraction
+N N,Mel frequency
+A N,original dataset
+A N,standard deviation
+N,subtype
+N N,LFPC components
+A N,enumerative representation
+N,heatmap
+N,CGMM
+N N,multi-label classification
+N N,log energy
+N N,SVDPPMI embeddings
+A A N N,large pretrained language models
+A N A N,Linear Prediction Cepstral Coefficients
+A N N,benchmark ECE corpus
+N P N,distribution of emotions
+N N,emotion distribution
+N N,affect categories
+A N,main contribution
+A,spectral
+A N,engaging responses
+A C A N,explicit or implicit manner
+A N,affective meaning
+A N,Alternative approaches
+A N,situational context
+A N,linguistic analysis
+A A N,in-depth linguistic analysis
+N N,real-world scenarios
+N P N N,predictions of emotion extraction
+N N,globe features
+N,Bestgen
+N C A N,source and vocal tract
+N N,sentence level
+A N,cross-entropy error
+A N N,virtual training environment
+N,evaluators
+A N,human subjects
+N N,VAD lexicon
+A N,subjective nature
+N P N,descriptions of characters
+A N N,causal relation detection
+N N,character emotions
+A N,dynamic range
+N N,word sense
+A N,negative seed
+N P N,recognition of emotions
+A N P N,automated recognition of emotions
+A N,artificial intelligence
+A N,diachronic corpora
+N N N,emotion detection system
+A,nonverbal
+N N,error plots
+A N,emotional variations
+A N,present study
+A A N,average different rate
+A A N,Autoassociative Neural Network
+N,LIWC
+N P N N,feasibility of the ECPE task
+N N,character n-grams
+N P N,results of emotion
+N N,correlation scores
+N,helplessness
+N N,input frame
+N,summarization
+N N,dialogue evaluation
+A C A N,dull and generic responses
+A N N,female emotion recognizer
+N N,input vector
+A A N,raw audio samples
+N N,arousal dimension
+A N N,automatic evaluation tool
+A N,spontaneous emotions
+N N,generation loss
+N N,language modeling
+N N,energy contours
+N,loudness
+N N,multi-label models
+N N N,emotion recognition performance
+N,emojis
+N N,time span
+A N,human ratings
+A N,historical emotion
+N,F0rate
+N N,master set
+N N,user emotion
+N,artifacts
+N N,production rules
+N P A N,intensity of emotional expression
+N N,sentiment classification
+N N,user satisfaction
+N A N,LOO cross-validation method
+N N,LP analysis
+A A N,neutral emotional state
+N P N,context of an emotion
+A N,physical make-up
+N P N N,set of cause clauses
+A N,common emotion
+N N,NLP tasks
+N P A N,effort of human evaluation
+N N,sentiment information
+A N N,historical sentiment information
+A N,lexical graph
+A N,strict pipeline
+N N N N,emotion cause detection system
+A,unsupervised
+A N,spectral features
+N P N,classification of emotions
+N N,Naïve Bayes
+N,RBEC
+N N,emotion relations
+N N,attention model
+N N,data analysis
+A N N,functional data analysis
+N P N N,element of the world model
+A N,online classifiers
+A N,semantic information
+A N,erroneous annotations
+N P N,effectiveness of language
+N N,speech corpus
+N N,polarity lexicons
+A N,large dataset
+N N,energy features
+N,LSTMs
+A N,upper layer
+A N,linguistic features
+A N P N N,non-verbal channels of emotion expressions
+A N,social card
+N N,channel annotations
+N,wLPCCs
+N N N,feature selection procedure
+N N,rating scales
+N P N N,regions of the speech signal
+N N,decision rule
+N N,truth responses
+A N N,neural network architecture
+A,bi-directional
+A N P N,potential pairs of emotions
+N,constructs
+N,centroids
+N N N,Spearman Rank Coefficient
+N,EmoLexGI
+A N,semi-supervised method
+N N,speech recognizer
+A N,fine-tuned models
+A,probabilistic
+A N N,relative classification error
+A N,human speech
+A,upper-case
+A N,emotional tone
+N N,vowel segment
+A N,human references
+A,non-evocative
+N P N,personality of the speaker
+A,text-based
+N,URLs
+N P N,property of interest
+N N,confidence intervals
+A N,historical texts
+A A N N,speech-based natural language generation
+N N,LPC coefficients
+A,Inter-CE-Bound
+N N,pitch period
+A N,female speakers
+A N,emotional states
+A,word-level
+A N,CNN model
+N,hyperparameter
+A,GPT-2
+A N,sequence-level emotion
+A N,emotional content
+N N,term-emotion pair
+A,cross-entropy
+A N,pre-trained model
+N N,inter-annotator agreement
+N,TensorFlow
+N,hyper-parameters
+N N,ER accuracy
+N N,BWS annotations
+A,clause-level
+N,word-emotion
+N,baseline
+A,cross-validation
+N,emotion
+N N,root node
+N N,research area
+A A N,simple linear classification
+N N,ECE corpus
+N V A,performance is consistent
+N C A N,selection and backward elimination
+N N,convolution layer
+N C N N,interaction and emotion co-occurrences
+N V A,results are consistent
+N N,forest structure
+A N N,neutral speech models
+N P N,pair of items
+N P A N,pairs of distinct items
+A N,linguistic patterns
+A N,linear transformation
+A N,synchronic evaluation
+A N N,final softmax layer
+N A N,mel-frequency cepstral coefficients
+A N,acoustic models
+A N N,full seed set
+A N,previous study
+A N N,Glottal Closure Instants
+A,repeating
+A,Semi-natural
+A N,characteristic parameters
+A N,gold ratings
+N N N,Long-short term memory
+A N,impulse-like excitation
+N N,verb count
+N,same-tune-eval
+N,SGNLP
+N,cognition
+N N,training samples
+A N N,distant supervision approach
+A N P N N,current state of the art approach
+A N,embedding-based metrics
+A N,propositional statements
+A N,gender-dependent emotion
+N N,emotion tag
+N,VAEs
+N N,NLG system
+N N,Testing Corpora
+A N,two-step framework
+N P A N,instants of significant excitation
+A N,emotional tendency
+N P N,domain of children
+N N,Event Analysis
+A N N,original beam search
+N N,background mood
+N N,annotation scheme
+A N,combined training
+A N,major dimensions
+N C N N,energy and pitch contour
+N P A N,notion of basic emotions
+A N,lexical resources
+N P A N,quality of emotional expression
+N,METEOR
+N P A N,approximation of the Pareto set
+N,cosine
+A N,hashtagged words
+A N,enhanced version
+N N,emotion factor
+N N,Twitter API
+A N,reasonable results
+N N,task settings
+N P N,Results with GRNNs
+A N,linguistic cues
+A N N,Natural Science Foundation
+A N,special tokens
+A N,main categories
+N,Initialization
+N,microblogs
+N,D-MFCC
+A N,lower range
+A N,EmoLexWAL rows
+A N,Light area
+N,subtasks
+A,numeric
+A N,unsupervised method
+A N,non-acted emotions
+A N,crucial information
+A N,current data
+N P N,frequency of formant
+N N,classification process
+A N N,gender-specific emotion recognizers
+N N,focus sentence
+N P A N,shade of the lexical item
+A N N,individual emotion extraction
+A N P N,emotional affinity of sentences
+A A N,top ranking system
+A N,interactive machine
+N,Marsella
+N P N,set of tuples
+A,multi-modal
+N N,noise ratio
+A N,best-first search
+N N P N,complexity nature of emotion
+N N,adaptation interval
+A N,emotional behavior
+A N,consistent evaluation
+A N N,distant supervision method
+A N,affective contents
+A N,Bi-LSTM classifier
+A N N,independent clause representations
+N,timespans
+A,neighboring
+A N P N N,larger number of affect lexicons
+A N,reset gate
+N N N N,log frequency power coefficients
+N N,Mahadeva Prasanna
+N N,feature subsystem
+A N,Emotional Conversation
+A A N,gold standard lexicon
+N,mini-batch
+A N,Base Feature
+A N N N,human speech production mechanism
+N N,Energy MFCC
+N N,feature types
+A N,384-dimensional feature
+N N,MFCC coefficients
+N,AdaBoost
+N,integer
+N N,BLEU scores
+N P N N,distribution of the i-th clause
+A N,supervised machine
+N P N,detection of emotion
+A N N,early representative work
+A N,content words
+A N,empathic generation
+N N,body channels
+N P N,window of size
+A N,semantic input
+N N,dropout rate
+N P N,meaning of the sentences
+A N,virtual agents
+A N,affective responses
+A N,large corpora
+A N,multiple clauses
+A N,statistical description
+N N,Resources allocation
+A N,ER performance
+N N,word-context pair
+N N,application area
+A,delta
+N N,lexicon features
+N N,Problem Definition
+N V A,model is preferred
+N N,transition matrix
+A N,simple classifier
+N N P N,VAD model of emotion
+N N,word polarity
+A N,anonymous reviewers
+N N,system developers
+A N,seq2seq task
+A N,average result
+N N,EmoLexGI rows
+N N,polarity induction
+N N P N,input sequence of Model
+N P A N,output of neural network
+N N,rating point
+A,human-like
+N,subtask
+A N,best correlation
+N,Multi-kernel
+A N N,neutral speech information
+A N,automatic algorithms
+A N N,historical language experts
+A N P N,extensive analysis of the annotations
+N N,data Test
+N N,emotion perception
+N N,Shimmer Accuracy
+N N,plot development
+A N,literary texts
+N P N,entries of words
+N P N,category of emotion
+N N,target word
+N N,validation sample
+N N,classification algorithm
+N N,focus clause
+N N,conversation corpus
+N N,Sign Test
+N N N,target language stage
+N P N,recognizability of emotions
+A N,larger data
+N V A,response is better
+N V A,transformation is linear
+N N,performance figures
+N V A,emotion is calming
+A N,average number
+A N N,neutral speech data
+N N,reference models
+N N,speech systems
+N N N,Weibo post-response pairs
+N P A N,accuracy of the ER procedure
+N P A N,probability with the best model
+N N,emoprepend model
+A N,current population
+N N,MFCC Components
+N P N P N,terms of the property of interest
+N N N,crossover operator type
+A N,lexical lists
+N,Walde
+N P N,dimension of word
+A N,beneficial feature
+N P A N,information of neutral speech
+A N,nuanced emotions
+N P N,emotions of the speaker
+A N,important cue
+A N,global guidance
+N N N,target term-emotion pair
+A N,out-of-core classifiers
+N N,ZFF signal
+A N,similar observations
+N N N,extract match ratio
+A N,2nd Experiment
+N N,emotion modeling
+N N N,ground truth responses
+A A A N,Syntactic Story-related Orthographic Conjunctions
+N A N,pitch synchronous analysis
+A,simulated
+A N,unrated word
+N P A N,state of clause-level Bi-LSTM
+N V A,sentence is preferred
+A N N,hidden Markov model
+N P N,feeler of an emotion
+N N,system variants
+N V A,algorithm is sensitive
+N N,knowledge base
+N P N N,list of cause candidates
+N N,multi-label approach
+A N N N,vocal tract system features
+A A N N,finer emotional meaning distinctions
+N N,vector representation
+A N,diachronic settings
+N P N,improvement of Inter-CE
+N N,split-half reliability
+N N,dialogue generation
+N N,extraction procedures
+A N,unique label
+A N,emotional input
+N,crowdsourcing
+N N,models emotion
+A N,psychological research
+A N,affective information
+N N,feature representation
+N N,search space
+A N,average score
+N N,sentence length
+N N,activation functions
+A N N,deep learning methods
+A N,binary string
+A,two-level
+A N N,Higher readability scores
+A N,small datasets
+A N N,Emotional language generation
+N P A N,presence of a causal relation
+N P N N,set of speech signal
+A N,single utterance
+A N,semantic tasks
+A N,emotional profiles
+A N,primary effect
+N N,annotation process
+A N,subsegmental features
+A A N,gender-independent male emotions
+N P N,distribution of the feature
+N N,testing set
+A N,baseline results
+N N,feature subsets
+N P N,characteristics of voice
+A N,arbitrary baseline
+R,iteratively
+N P N,effects of emotion
+A N,critical issue
+A N,conceivable surrogate
+A N,uniform distribution
+N P N,amount of individuals
+A N,gender-dependent features
+A N A N,male emotions female emotions
+A A N,probabilistic neural network
+A N N,lower activation states
+A N,F1 measure
+N P N,sets of rankings
+N,Farrington
+A N,real-time performance
+N P A N,result of the automatic evaluation
+A N,gender-independent classification
+R A N,emotionally relevant responses
+N P N,gender of a speaker
+N N N,emotion recognition procedure
+N,taxonomy
+A,Breathy
+N,negation
+N N N,training error plots
+N N N,case frame structure
+N N,out-of-domain data
+A N,lexical semantics
+N N,sentence embeddings
+A N,efficient feature
+N N,feature streams
+A N,similar items
+A N,Vocal cues
+A N,upper-case word
+N P N,sets of scores
+N A N,Frequency Cepstral Coefficients
+N P N,loss of the model
+A N,emotional database
+N,human-computer
+A N,spontaneous speech
+N N,speech samples
+R A N,substantially larger number
+N N,human-machine dialogue
+N V A,differences are significant
+N,emoticons
+A N,human preference
+N N,context information
+A N,vectorial emotion
+A N N,traditional ECE methods
+A N,automatic methods
+N N,confusion matrix
+A N,valid assignments
+N N,component Bi-LSTM
+N N,accuracy rates
+N N,sampling rate
+A N,Prompt word
+N P N N,Ranges of story progress
+N N,joy terms
+A N,manual inspection
+N,co-occurrences
+A N,careful investigation
+N N,sptrel sens
+N N,EASC data
+N N,emotion data
+A N N,vocal fold vibration
+R,computationally
+A N,hidden units
+N,F-measure
+N N,Pearson coefficient
+A C A N N,full and limited seed lexicons
+N N,Context windows
+N N,recognition module
+N P N,movements of body
+N P N N,set of emotion clauses
+N N N,word choice problems
+N,naturalness
+A N,suprasegmental level
+A N N,malicious data entry
+N N N,Movie Review dataset
+A N,binary tag
+A N,personal space
+N V A,corpora are similar
+N N,sequence-to-sequence framework
+N N,D-D-MFCC Jitter
+N P N,types of databases
+N P N,emotion of joy
+A N,expanded set
+N N,SVM baseline
+A N,high intensity
+N P N,patient of the event
+N,Aarne
+A,Audio-Visual
+A N,common-sense knowledge
+N,NRC-Aff-Int
+N C N N,content and emotion levels
+N N,training material
+A N P N N,structural features of time series
+A N N,highest classification accuracy
+N P N,label of channel
+A,non-dominated
+A N,challenging task
+N C N N,training and development sets
+A N,negative emotions
+N,Wizard-of-Oz
+A N,weighted average
+A N,unified framework
+N,Perturbations
+A N,commonplace responses
+N V A,class are worse
+A N N N,natural language understanding tasks
+N P N,kind of comparison
+N P A N,results of the pairwise comparisons
+A N P N,highest amount of emotion
+A N,Direct speech
+N C N N,pitch and energy contours
+A N,Experimental Settings
+N P N N,predictions of cause extraction
+N N,speaker recognition
+N N,density function
+N N,hashtag form
+A N,prior research
+A N N,emotional chat machine
+N P N,context of the conversation
+N N,recognition stage
+A,analogous
+N P A N,units of emotional analysis
+N N P N,block diagram of the feature
+N P N,ability of the model
+N N N,feature quantization methods
+A N,distributional semantics
+N,Keras
+A N P N,lowest amount of emotion
+A N,contemporary dataset
+A N,causal relationship
+N N,word ratings
+N N,single-label classification
+A N,emotional situation
+N N,Sentiment Inference
+N P A N,intensity of the emotional experiences
+N C A N,features and structural features
+N P N,degree of control
+A N,pitch-related features
+N N,ECE research
+N N,transformer architecture
+N N N,candidate emotion-cause pairs
+N C N N,tuning and evaluation data
+N N,training objective
+N N,wLPCC vector
+A N,separated tuning
+N P N,probability of the output
+N N,ablation tests
+A N,bottom-line competition
+N,F1rate
+N P N N,difference of the output probability
+N N N,gender detection system
+N,openSMILE
+A N N N,text-based emotion prediction problem
+A,task-specific
+N,alternation
+N,subcorpora
+A N,linear units
+A N,wide applications
+A N,chosen emotions
+A N N,deep memory network
+A N,non-verbal behavior
+N N,emotion interaction
+A N,strong emotion
+A N,Seq2Seq model
+N N,SGNS embeddings
+N N,training process
+A N,automatic systems
+A N,non-verbal description
+N N,output words
+N P N N,Presence of a communication partner
+A,EmoLexWAL
+N V A,speech is neutral
+N N,Generation Method
+A N,previous research
+A N,specific feeling
+N C A N,speech and neutral speech
+A N,conversational partners
+N N,speech frame
+N P A N,deviations of emotional speech
+A N N,limited seed set
+N,EmoDS-BS
+N N,polarity regression
+N N,pair filter
+N N,word representations
+N P N,kinds of information
+A N,affective states
+N N,parameter settings
+R,linearly
+N N,annotator pair
+A N,single filter
+N C N N,Emotion and Cause Extraction
+R,recursively
+A N,positive emotion
+A N,bidirectional LSTM
+N N,emotion pairs
+N N N,evaluation data condition
+N,NRC-EmoLex
+A N,intense emotions
+A A N,deep neural network
+N N,loss function
+A N,linguistic unit
+N N,Batch size
+N N,information content
+N C N N,emotion and cause events
+N,F-scores
+N N,SVM regression
+N N,regularization parameter
+N P N,types of features
+N N,AMT workers
+N P N,source of excitation
+N N,distance formulas
+N,negativity
+N N,emotion identification
+N N,training details
+A N,hidden matrix
+A N,high accuracy
+A C A N N,male and female emotion classification
+N P N N,description of character emotions
+A N,prototypical emotions
+N N,evaluation scripts
+A A N,raw audio input
+N P N,frames of an utterance
+A N N N,conventional emotion speech features
+N,retweets
+N,dimensionality
+N V A,problem is conventional
+N N,user queries
+N N,VAM database
+A N,large collection
+N P N,diversity of responses
+N N,anger terms
+A N,similar prosody
+N V A,sentence is emotional
+A N N,highest emotion score
+N P N,rate of pitch
+N,thesaurus
+N,extraction
+N,classification
+N N,probability distribution
+A N,automatic recognition
+N N,Emotion-Channel associations
+N N,circumplex model
+N N,discriminant analysis
+A A N,linear discriminate analysis
+N N,word-emotion association
+A N,dimensional vectors
+N,word-context
+N N,TEP problem
+A N,official submission
+N N N,text generation model
+A N,emotional generation
+N N,i-th clause
+A A N,feed-forward neural network
+A N,gold annotations
+N N,text instance
+A N,benchmark dataset
+N N,NLPCC dataset
+A N N,gender-dependent emotion recognizer
+N P N,form of a hashtag
+A,speaker-independent
+N,utterances
+N,correlation
+N,Endpoint
+N,evaluation
+N,metrics
+N,verb
+N N,emotion transitions
+N,Praat
+A,n-tuple
+N,MaxDiff
+N,participles
+N,Multi-words
+N,parentheses
+N P N,average of all runs
+N,open-domain
+N,high-frequency
+N,propagation
+A N,distinct CNN
+N,visemes
+A,clustered
+N P N,cultivation of talent
+N,degeneration
+A N,emotional evaluation
+N,Sci-kit
+R,joyfully
+A,sense-inventory
+N,ngrams
+N,lexico
+A N,individual sub-tasks
+A,highlycorrelated
+A N,high-quality emotion
+N N,Flesch Reading
+R,adjacently
+N,lab-condition
+N,metadata
+A,folk-tale
+N,Defense
+A N,hourly pay
+A N,ORDINARY FOLK-TALE
+A,triple
+R,stochastically
+N,LibSVM
+N,pitch-track
+N,joy-sadness
+A N,base model
+N N,LSTM model
+A N P N,peak value of the formant
+N,strong-intensity
+A,Upper-Bound
+A,heuristic
+A N,rank score
+N,Padman
+N,DARPA
+N,workbench
+A C A N,mental and physical health
+N,notation
+N N,Feature Accuracy
+N,SVMs
+A N,complete annotations
+A,negative-to-positive
+N,DNN-HMMs
+N,ELMo
+N N,bootstrap resampling
+A N,context-dependent semantics
+A,non-differentiable
+N,emotion-intensity-labeled
+N,GRNN
+N,Callison-Burch
+A,illustrative
+A,divine
+N,z-transformation
+N,post-annotate
+N,CELP
+R,semantically
+R,inversely
+N,Delta-MFCC
+A N N,Emotional Conversation Generation
+N,anger-fear
+N,SUSAS
+N P N N,range of the intensity scale
+N,ground-truth
+N,abscissa
+A N,combinatorial mathematics
+N,psychophysics
+A N,GPT-2 model
+A N,benchmark system
+N,Hashtag-Query-Term
+A,sarcastic
+N N,Data Preparation
+R,pedagogically
+A A N,Passive Aggressive classifier
+N,BiLSTM
+N,authorship
+R,analogously
+A N,variational autoencoders
+R,quantitatively
+A,dejected
+A,Binary-based
+A,boiling
+N N,two-filter CNN
+N P N,variant of Inter-CE
+A N,emotional test
+N,datapoint
+N,CRFs
+A,3-valued
+A,instantaneous
+N,back-propagation
+N,nominalization
+A,non-evaluative
+N,ponyms
+N,cross-clause
+A,perceptual
+N,tanh
+N,near-synonyms
+A,pfinal
+A N,official evaluation
+A,sad-bored
+A N,emotional categorization
+N N,evaluation set-up
+N,previ
+N N,supervisor exam
+N,DRNN
+N,code-switching
+N,modals
+A N,rank correlation
+N,interrelations
+A,unbalanced
+N,beam-search
+A,median
+A,leave-one-out
+N,emotionis
+N N,post-facto interview
+A N,pseudo-boolean optimization
+A,blissful
+N,scalars
+N P A N,production of emotional speech
+N,pre-train
+N,harmonicity
+A N,generic vocabuary
+A N,discriminating feature
+N N,Ethics Committee
+A,tie-breaking
+N,particulary
+N,word-sense
+A N,Passive Aggressive
+N,offline
+N,F0max
+A,Low-dimensional
+A N,word-pair antonymy
+N,LPCCs
+A N,standard back-propagation
+N C N N,predication and cause predication
+N,Z-test
+N,K-NN
+N,synset
+N,eigenvectors
+A,superscript
+N,resonators
+A,channel-agnostic
+A,extensible
+R,orally
+N,CYUT
+N,ineffectiveness
+A,grammatical
+A,beatific
+A N,alternative solution
+A,harmonic
+A,italic
+N N,sadness dataset
+A N N,singular value decomposition
+A N,state-of-the-art methods
+N,non-emotion
+N,XLNet
+N,lemmatization
+N,glottis
+A,down-sampling
+N,EmoLex
+N N,GCI index
+N,Agressive
+A,noncausal
+A,sigmoid
+R,textually
+A,pre-specified
+A N,3-D audio
+N,crowdworkers
+A,37dimensional
+N,high-coverage
+A N,average length
+A N,quality features
+N,MSFs
+A,relaxed-serene
+N,vertices
+N,ideograms
+A N,valid representations
+N,secularization
+N,human-label
+N N,band energies
+N P N,effectiveness of Inter-CE
+N,trust-disgust
+A,goal-oriented
+N N,slide bars
+N,distractors
+A,demotional
+N,prepositions
+N,multi-clause
+N,co-reference
+A,agglomerative
+N,No-Query-Term
+A,dotted
+N,high-pass
+N C A N,gestures and bodily postures
+A,angry-anxious
+A,improved
+A,infeasible
+N N,mini-batch size
+A N,naive baseline
+A,untypical
+R,unfavorably
+A,unconformable
+A N,MOGA-based feature
+A,modal
+N,EmoLexBi
+N,ttest
+N N,mood hashtag
+A,N-gram
+N,T-test
+A,CANN-E
+N,holodeck
+A,re-annotated
+N,smileys
+A,unessential
+N,interpolation
+N,representativeness
+N,Bi-LSTMs
+N,Persing
+R,arbitrarily
+N,self-evaluation
+A,blithe
+N,stylometry
+N,EmoDS-EV
+N,activation-deactivation
+N,cepstrum
+N,sMBR
+A,N-candidates
+N,NPZCs
+A N,durational cues
+A N,Total anger
+N,fear-nofear
+N,EmoDS-MLE
+N,asurrogate
+A,separable
+N,foreignness
+A,audio
+A,neutral
+N,noun
+N,parameters
+N,nodes
+R,manually
+A,linguistic
+A N,facial expressions
+R,randomly
+N,intensity
+N,jitter
+N,sadness
+N,accuracy
+N,compression
+N,database
+A N,human emotions
+N,data
+A,state-of-the-art
+A,respective
+R,negatively
+N,coherence
+A,statistical
+A,manual
+N,layer
+N,features
+N,intuition
+N,synonyms
+A,nominal
+A,gradient
+N,disgust
+N,probability
+N,input
+A,implicit
+N,experiments
+N P N,meaning of words
+A N,key component
+N,deviation
+N,frequency
+A,explicit
+N,boredom
+N P N,state of the art
+N,variance
+N,model
+A,random
+N N,test result
+N,happiness
+A,negative
+A,expressive
+N,dialogue
+N,domain
+A,intrinsic
+R,explicitly
+N,duration
+A,distinct
+N,BERT
+A,indicative
+A,coherent
+R,implicitly
+N,graph
+N N,pilot study
+A,disgusted
+R,uniformly
+N,prediction
+N,speaker
+N,empathy
+A,evocative
+N,component
+N,anger
+N,dimension
+N,feasibility
+N,sentiment
+N,tokens
+N,precision
+N,method
+N,anticipation
+N,partition
+A,frequent
+N,Contentment
+N,vocabulary
+A N,traditional methods
+N,labels
+N,framework
+N,variable
+N,representation
+N,recall
+A,ambiguous
+N,Pearson
+A,heartbroken
+N,dejection
+N,retrain
+N,convergence
+N,frame
+N,seed
+A,joyful
+A,absolute
+N,samples
+A,positive
+N,sequence
+N,sentence
+A,sullen
+N,output
+N,cluster
+N,pitch
+N,sensations
+N,content
+N,generation
+N,syllables
+A,crying
+N,bias
+A,bored
+N,training
+R,emotionally
+A,inconsistent
+A,noisy
+A,unseen
+N,mood
+N,loneliness
+N,surprise
+A,annoyed
+A,devastated
+N,markers
+A,identical
+N,ROUGE
+A,overwhelming
+A,greedy
+A,golden
+N,fear
+A,shocked
+A,sensitive
+A,angry
+A,frustrated
+A,correct
+R,nervously
+A,excited
+N,voice
+N,constituents
+N,contrast
+N,recordings
+A,confused
+N,exaggeration
+N,attention
+A,intense
+N,noise
+A,gloomy
+A,unclear
+N,rage
+A,unsuitable
+N,jealousy
+A,realistic
+N,discrimination
+A,awesome
+N,sensitivity
+A,happy
+N,library
+N,impulse
+N,significance
+N,manner
+N,engagement
+N,anxiety
+N,weights
+N,affection
+N,agreement
+N,SNoW
+N,feelings
+A,Normal
+N,personality
+N,grief
+N,sorrow
+N,disbelief
+N,contempt
+N,fury
+N,scripts
+A,costly
+N,patient
+N,distress
+N,encouragement
+N,silence
+N,ecstasy
+R,invariably
+A,tired
+N,factor
+N,guilt
+N,trust
+N,laugh
+N,pride
+N,shame
+N,inspiration
+N,love
+N,checks
+N,penalty
+N,Gain
+N,styles
+N N,AANN model
+N,HMM
+A A N,Conventional Prosodic Feature
+N,GCI
+N,LPC
+N N,NLP application
+N,CNN
+N,RNN
+A N N,high SNR region
+N N,LPCC component
+N N,PLP coefficient
+N N,LFPC component
+N N,SVDPPMI embedding
+A N A N,Linear Prediction Cepstral Coefficient
+N N,NLP task
+N,wLPCC
+N,URL
+N N,LPC coefficient
+N N,BWS annotation
+A N N,Glottal Closure Instant
+N,VAE
+N P N,Results with GRNN
+A N,EmoLexWAL row
+N N,MFCC coefficient
+N N,BLEU score
+N N,EmoLexGI row
+N N N,Weibo post-response pair
+A A A N,Syntactic Story-related Orthographic Conjunction
+N A N,Frequency Cepstral Coefficient
+A N N,traditional ECE method
+N P N N,Range of story progress
+N N,Context window
+N N,AMT worker
+N N,Emotion-Channel association
+N,SVM
+N,DNN-HMM
+N,CRF
+N,MSF
+N,NPZC
+A N,automatic evaluations
+A N,human evaluations
+A N,male emotions
+A N,female emotions
+A N,explicit manner
+A N,implicit manner
+A N,dull responses
+A N,generic responses
+A N,mental health
+A N,physical health
+N,annotation
+N,corpu
+N,annotator
+N N N,emotion detection experiment
+N N N,emotion detection model
+A N,basic emotion
+N,emod
+N N N,speech signal feature
+N,hashtag
+A N,emotional category
+N N,emotion annotation
+N N N,excitation source feature
+N N,target term
+N N,dialogue system
+N N,word embedding
+N N N,word embeddings model
+A N,primary emotion
+A N,emotional word
+A A N,strong emotional word
+N N,affect lexicon
+N N,seed word
+A N,experimental result
+A N N,limited seed lexicon
+N N,emotion expression
+A N N,non-verbal emotion expression
+A N N,complicated emotion expression
+A C A N,automatic and human evaluation
+N,turker
+A N,selected feature
+N,grnn
+N N,emotion label
+A N,emotional label
+N N,emotion type
+N N,intensity score
+A N N,gold intensity score
+N N,aann model
+A N,relevant feature
+N,bigram
+N,unigram
+A N,non-verbal channel
+N N,feature group
+N,keyword
+A N,generative model
+N,mfcc
+N,hmm
+N N,emotion dimension
+A N N,primary emotion dimension
+N A N,default emotional shade
+N N,classification task
+A A N,recurrent neural network
+N N,head word
+N P A N,set of basic emotion
+N N,recognition result
+N N N,recognition accuracy result
+N,adverb
+A N,prosodic feature
+A A N,conventional prosodic feature
+A N,conversational agent
+N N,speech feature
+A N N,selected speech feature
+A N,spatial relation
+N,sgn
+N N,induction algorithm
+N N N,lexicon induction algorithm
+N N,emotion hashtag
+A N,human annotation
+A N N,non-verbal communication channel
+N,affective tweet
+N N,body movement
+N N,language stage
+A N N,historical language stage
+N N,emotion theorie
+N,gci
+A N,acoustic feature
+A N,hidden layer
+A N,explicit emotion
+A N,native speaker
+A N,emotional sentence
+N,epoch
+N,4-tuple
+N,sub-task
+N N,word vector
+N N,text-to-speech synthesi
+A N N N,neutral speech aann model
+N N,pilot experiment
+A N,physical sensation
+N N,dialog system
+A N,fine-grained emotion
+N,iteration
+N N,sentiment score
+A C A N,male and female emotion
+N P N N,sets of seed word
+A N,meaningful response
+N,lpc
+N N,emotion studie
+N P N,types of emotion
+A N P N,fine-grained types of emotion
+N N,vad dimension
+N N,recombination type
+A N,automated metric
+N,chatbot
+A N,discrete category
+N N,nlp application
+A N N,practical nlp application
+N P N,quality of annotation
+A N,emotional connotation
+N N,word n-gram
+N N,valence emotion
+N N,classification result
+N N,speech characteristic
+A N,neutral word
+A N N,automatic storytelling system
+A N P N,weighted sum of embedding
+N P N N,channels of emotion expression
+N,cnn
+A N,human annotator
+N,hearer
+N,fitness-value
+N N,regression algorithm
+N P N,percentage of time
+A N,affective norm
+N,rnn
+N,rmd
+N N,speech segment
+A N N,pretrained language model
+A N,neutral sentence
+N,derivation
+N P N,result of the experiment
+N,interjection
+A N N,high snr region
+A N,emotional utterance
+N N N,language generation system
+N P N,model of emotion
+A N P N,categorical model of emotion
+A N,emotional response
+A N N N,natural language generation system
+A N P N,semantic orientation of word
+A A N,exact textual position
+A N,computational linguistic
+N N,voting result
+A N N,human voting result
+N A N,energy related feature
+N N,lpcc component
+A N,diachronic experiment
+N N,plp coefficient
+N N,lfpc component
+N N,svdppmi embedding
+A A N N,large pretrained language model
+A N A N,linear prediction cepstral coefficient
+N P N,distribution of emotion
+N N,affect categorie
+A N,engaging response
+A N,alternative approach
+N N,real-world scenario
+N N,globe feature
+N,evaluator
+A N,human subject
+N P N,descriptions of character
+N N,character emotion
+N P N,recognition of emotion
+A N P N,automated recognition of emotion
+N N,error plot
+A N,emotional variation
+N N,character n-gram
+N N,correlation score
+N,helplessnes
+A C A N,dull and generic response
+A A N,raw audio sample
+A N,spontaneous emotion
+N N,generation los
+N N,energy contour
+N N,multi-label model
+N,emoji
+A N,human rating
+N,artifact
+N N,production rule
+N P N N,set of cause clause
+N N,nlp task
+A N,spectral feature
+N P N,classification of emotion
+N N,emotion relation
+A N,online classifier
+A N,erroneous annotation
+N N,polarity lexicon
+N N,energy feature
+N,lstm
+A N,linguistic feature
+A N P N N,non-verbal channels of emotion expression
+N N,channel annotation
+N,wlpcc
+N N,rating scale
+N N,truth response
+A N P N,potential pairs of emotion
+N,construct
+N,centroid
+A N,fine-tuned model
+A N,human reference
+N,url
+N N,confidence interval
+A N,historical text
+N N,lpc coefficient
+A N,female speaker
+A N,emotional state
+N,hyper-parameter
+N N,bws annotation
+N N,ece corpu
+N C N N,interaction and emotion co-occurrence
+A N N,neutral speech model
+N P A N,pair of distinct items
+A N,linguistic pattern
+N A N,mel-frequency cepstral coefficient
+A N,acoustic model
+A N N,glottal closure instant
+A N,characteristic parameter
+A N,gold rating
+N N,training sample
+A N,embedding-based metric
+A N,propositional statement
+N,vae
+A N,major dimension
+N P A N,notion of basic emotion
+A N,lexical resource
+A N,hashtagged word
+A N,reasonable result
+N N,task setting
+N P N,results with grnn
+A N,linguistic cue
+A N,special token
+A N,main categorie
+N,microblog
+A N,emolexwal row
+A N,non-acted emotion
+A N N,gender-specific emotion recognizer
+A N P N,emotional affinity of sentence
+A N,affective content
+A N N,independent clause representation
+N,timespan
+A N P N N,larger number of affect lexicon
+N N N N,log frequency power coefficient
+N N,feature type
+N N,mfcc coefficient
+N N,bleu score
+A N,content word
+N N,body channel
+N P N,meaning of the sentence
+A N,virtual agent
+A N,affective response
+A N,multiple clause
+N N,lexicon feature
+A N,anonymous reviewer
+N N,system developer
+N N,emolexgi row
+A N,automatic algorithm
+A N N,historical language expert
+A N P N,extensive analysis of the annotation
+A N,literary text
+N P N,entries of word
+N P N,recognizability of emotion
+N N,performance figure
+N N,reference model
+N N,speech system
+N N N,weibo post-response pair
+N N,mfcc component
+A N,lexical list
+A N,nuanced emotion
+A N,out-of-core classifier
+A N,similar observation
+N N N,ground truth response
+A A A N,syntactic story-related orthographic conjunction
+N N,system variant
+N P N N,list of cause candidate
+A N N N,vocal tract system feature
+A A N N,finer emotional meaning distinction
+A N,diachronic setting
+N N,extraction procedure
+N N,activation function
+A N N,deep learning method
+A N N,higher readability score
+A N,small dataset
+A N,semantic task
+A N,emotional profile
+A N,subsegmental feature
+A A N,gender-independent male emotion
+A N,baseline result
+N N,feature subset
+N P N,amount of individual
+A N,gender-dependent feature
+A N A N,male emotions female emotion
+A N N,lower activation state
+N P N,sets of ranking
+R A N,emotionally relevant response
+N N N,training error plot
+A N,lexical semantic
+N N,sentence embedding
+N N,feature stream
+A N,similar item
+A N,vocal cue
+N P N,sets of score
+N A N,frequency cepstral coefficient
+N N,speech sample
+N,emoticon
+A N N,traditional ece method
+A N,automatic method
+A N,valid assignment
+N N,accuracy rate
+N N,joy term
+N,co-occurrence
+N N,sptrel sen
+A N,hidden unit
+A C A N N,full and limited seed lexicon
+N N,context window
+N P N N,set of emotion clause
+N N N,word choice problem
+N P N,types of database
+N C N N,content and emotion level
+N C N N,training and development set
+A N,negative emotion
+N,perturbation
+A N,commonplace response
+A N N N,natural language understanding task
+N P A N,results of the pairwise comparison
+N C N N,pitch and energy contour
+A N,experimental setting
+N N N,feature quantization method
+A N,distributional semantic
+N,kera
+N N,word rating
+N P A N,intensity of the emotional experience
+N C A N,features and structural feature
+A N,pitch-related feature
+N N N,candidate emotion-cause pair
+N N,ablation test
+A N,linear unit
+A N,wide application
+A N,chosen emotion
+N N,sgns embedding
+A N,automatic system
+N N,output word
+A N,conversational partner
+N N,word representation
+A N,affective state
+N N,parameter setting
+N N,emotion pair
+A N,intense emotion
+N C N N,emotion and cause event
+N,f-score
+N P N,types of feature
+N N,amt worker
+N N,distance formula
+N N,training detail
+N P N N,description of character emotion
+A N,prototypical emotion
+N N,evaluation script
+A N N N,conventional emotion speech feature
+N,retweet
+N N,user querie
+N P N,diversity of response
+N N,anger term
+N N,emotion-channel association
+A N,dimensional vector
+A N,gold annotation
+N,utterance
+N,metric
+N N,emotion transition
+N,participle
+N,multi-word
+N,parenthesis
+N P N,average of all run
+N,viseme
+N,ngram
+A N,individual sub-task
+N,svm
+A N,complete annotation
+N,dnn-hmm
+A N,context-dependent semantic
+A N,combinatorial mathematic
+N,psychophysic
+A N,variational autoencoder
+N,crf
+N,ponym
+N,near-synonym
+N,modal
+N,interrelation
+N,emotioni
+N,scalar
+N,lpcc
+N,eigenvector
+N,resonator
+N,ineffectivenes
+A N,state-of-the-art method
+N,crowdworker
+A N,quality feature
+N,msf
+N,vertex
+N,ideogram
+A N,valid representation
+N N,band energie
+N N,slide bar
+N,distractor
+N,preposition
+N,high-pas
+N C A N,gestures and bodily posture
+A,angry-anxiou
+N,smiley
+N,bi-lstm
+A,n-candidate
+N,npzc
+A N,durational cue
+N,parameter
+N,node
+A N,facial expression
+A N,human emotion
+N,datum
+N,feature
+N,synonym
+N,experiment
+N P N,meaning of word
+N,token
+A N,traditional method
+N,label
+N,sample
+N,sensation
+N,syllable
+A,cry
+N,bia
+N,marker
+N,constituent
+N,recording
+N,weight
+N,feeling
+N,script
+N,check
+N,style
+A N,male emotion
+A N,female emotion
+A N,dull response
+A N,generic response
+N N,emotion recognitions
+A N,emotional recognitions
+A N N,speech-based emotion recognitions
+A N N,automated emotion recognitions
+N N N,speech emotion recognitions
+N N N,emotion recognition systems
+A N N,uncompensated emotion recognitions
+A N N,automatic emotion recognitions
+N N N,emotion recognition methods
+N N N,emotion recognition tasks
+N,corpora
+N,vectors
+N N,data sets
+N,classifiers
+N,algorithms
+N,valences
+A N,emotional speeches
+N N,feature vectors
+N N N,feature vector quantizations
+A N N,37-dimensional feature vectors
+N N,emotion detections
+N N N,emotion cause detections
+A N N,automatic emotion detections
+N N,emotion extractions
+N N N,Emotion cause extractions
+N N N,emotion extraction tasks
+N,EmoD
+N N,speech signals
+N N,emotion categories
+N N,gender detections
+A N N,automatic gender detections
+N N,emotion classifications
+N N N,emotion classification methods
+N N,emotion intensities
+N C N P N,intensity or degrees of emotion
+N N,excitation sources
+N N N,excitation source informations
+N N N,excitation source components
+N,arousals
+N N,training datas
+A N N,interactive dialogue systems
+A N N,emotional dialogue systems
+A N N,vocal tract systems
+N,MFCCS
+N,recognizers
+N,polarities
+N,subsets
+N N,feature sets
+N,realizations
+N,LSTMs
+N N N,WordNet Affect Lexicons
+N,behaviors
+N N,recognition systems
+A,binaries
+A N,shared tasks
+N N N,Seed Word Selections
+N N,recognition rates
+A N N,class-wise recognition rates
+A N N,average recognition rates
+N N,feature extractions
+N N,feature selections
+N N N,feature selection techniques
+N N,extraction tasks
+A N N N,gender-independent emotion recognition systems
+A N N N,basic emotion recognition systems
+N N,seed lexicons
+A N N,full seed lexicons
+N N,test sets
+A N,emotional expressions
+N,formants
+A,seq2seqs
+N N,ECPE tasks
+N N,query terms
+N N N,Hashtag Query Terms
+N N,emotion-cause pairs
+N N N,emotion-cause pair extractions
+A N,hidden states
+A A N,previous hidden states
+N,LPCCS
+N,Inter-ECs
+N,multi-tasks
+N N,multi-label tasks
+N P N,intensities of emotion
+N,COHAS
+N,LFPCS
+N N,training sets
+A N N,limited train sets
+N N N,Training set sizes
+A N,future works
+N N,emotion classifiers
+A N N,sequence-level emotion classifiers
+N,Inter-CEs
+A N,distant supervisions
+N P A N,labels of non-verbal emotion
+N N,emotion models
+A N N,PNN-based emotion models
+N,BLEUS
+N N,compensation transformations
+A N N,nonlinear compensation transformations
+N N,time steps
+N N,gender informations
+A N N,correct gender informations
+N,SVDPPMIS
+A N,Linear Predictions
+A,discretes
+N,amplitudes
+A N,deep learnings
+N N N,word emotion inductions
+N N,recognition accuracies
+N P N N,accuracies of the emotion recognition
+N,decoders
+N,readabilities
+N N,ground truths
+A N,semantic orientations
+A A N,negative semantic orientations
+A A N,positive semantic orientations
+N N,emotion lexicons
+A N N,external emotion lexicons
+A N,historical languages
+A N,lexicon-based attentions
+A N,human judges
+N N,sentiment analyses
+N N,response generations
+A N,outer sets
+A A N,intermediate outer sets
+A N N,natural language generations
+N,setups
+N,feelers
+N N,feature engineerings
+N N,development sets
+N N,gold standards
+A N N,historical gold standards
+N N,dialogue managers
+N N,input posts
+A N,General Inquirers
+N N,attention mechanisms
+A N N,lexicon-based attention mechanisms
+A N,emotional meanings
+A N,emotional shades
+A N,seq2seq frameworks
+N N,emotion processings
+N N,majority classes
+N N,evaluation models
+A N N,automatic evaluation models
+N C N N,extraction and cause extractions
+N,encoders
+N,activations
+N N,classification accuracies
+N N,emotion keywords
+N,chatbots
+N P N,sets of emotion
+N N,emotion sets
+N P A N,sets of basic emotions
+A,observeds
+A,4-tuples
+A N,specific emotions
+A,gender-independents
+A N,F1 scores
+A N N N,vocal tract system informations
+A,sequentials
+N N N,word choice questions
+N N,Pearson correlations
+N N,emotion scores
+N,validations
+N N,emotion clauses
+N N,compression layers
+N,dialogs
+N N,machine translations
+A N N,neural machine translations
+A,superviseds
+N,SGN
+N N,speech recognitions
+N A N,Speech Emotional Recognitions
+A N N,automatic speech recognitions
+N P N,states of the speaker
+A N P N,emotional states of speakers
+A,discriminatives
+N N,intensity levels
+N N,LP residuals
+A,numericals
+N N,thesaurus categories
+A N,lexical items
+N,residuals
+A N,human judgments
+N,lexicons
+N N,case frames
+A,synchronics
+A N,empirical studies
+N,affective tweets
+A N,contextual informations
+N,CECGS
+N N,emotion definitions
+A,evaluatives
+N P N,theories of emotion
+A N P N,psychological theories of emotion
+N N,regression models
+N N,vector quantizations
+N,Emo-prepends
+N,GCes
+N,regularizations
+N N,sentence plannings
+A N,best-worst scaling
+N N,evaluation periods
+N N,output layers
+A N,explicit emotionss
+N,preprocessings
+A N,semantic frames
+N N,word vectorss
+N N,texts-to-speech synthesis
+N,Bravo-Marquezzes
+N N,emotion representations
+N N,emotion features
+A,384-dimensionals
+N,prosodies
+N N,output probabilities
+N,subcorpora
+A N N,traditional ECE tasks
+A N,baseline models
+N N,Multi-task Learnings
+N N,emotion informations
+A N,emotional informations
+A N,Individual Emotions
+N N,annotation studies
+N,dropouts
+A A N,Convolutional Neural Networks
+N,perplexities
+N N,classification problems
+A N N,binary classification problems
+N N,machine learnings
+A N N,text-based emotion predictions
+A N,genetic algorithms
+N A N,Multi-Criteria Genetic Algorithms
+A A N,multi-objective genetic algorithms
+A N,final positions
+A N,relative improvements
+N N,classification terms
+N N N,emotion classification terms
+N N,test utterances
+A N N N,vocal tract system components
+N N,multi-label problems
+N N,word similarities
+N C N N,emotion and sentiment recognitions
+N P N,attitudes of the speaker
+A N,binary classifications
+A N,emotional attitudes
+A N,random samples
+N N,amplitude powers
+A N N,average amplitude powers
+A N,contemporary languages
+A N,Pareto sets
+N P N,orders of magnitude
+A,hierarchicals
+A N,automatic emotions
+A,best-worsts
+N P N,annotations of emotion
+N P A N,databases of emotional speech
+N N,dialogue datasets
+A N N,Empathetic Dialogue datasets
+N,RastaPLPs
+N P N,degrees of emotion
+A N,dependent views
+A N,independent views
+A,categoricals
+N N,recognition methods
+N N,processing times
+A,nonlinears
+N N,emotion predictions
+N N,annotation projects
+N N N,data annotation projects
+N N,LP models
+N P N,qualities of annotations
+N N,input sentences
+N N,word n-gramss
+N N,parameter tunings
+N,quartiles
+A N,37-dimensional features
+A N,lexical contents
+A N,open domains
+N N,recall rates
+A A N,stochastic gradient descents
+A A N N,Convolutional Neural Network models
+A N,compositional representations
+A N,baseline systems
+N N N,emotion speech databases
+A N N,emotional speech databases
+A,booleans
+N N N,Naïve Bayes classifiers
+A N,neutral wordss
+N N,world models
+A,predictives
+N V A,word is closests
+N N,development datas
+R,empiricallies
+A N,weighted sums
+A N P N,weighted sums of embeddings
+N P N,kindss of emotion
+N,EmoEmbs
+N P N N,channelss of emotion expressions
+A N,lower layers
+A N,random forests
+N N,BOW approaches
+A A N N,simple content BOW approaches
+N N,softmax layers
+N,reproducibilities
+N N,evaluation methods
+A N,forward selections
+A,non-emotionals
+N,mappings
+N N,emotion vectors
+N P N,partss of speech
+A N,maximum pitches
+A,uncompensateds
+A,speaker-specifics
+A N,glottal closures
+A N N,natural language processings
+N N N,support vector machines
+A N,psychological theories
+N P N,percentages of times
+N C N N,arm and hand gestures
+A N,emotional distances
+A N,fundamental frequencies
+N N,vocabulary sizes
+N C N N,gender and emotion recognitions
+A N,random walks
+N,RMD
+N N,speech rates
+N,requesters
+N N,likelihood probabilities
+N P N,results of the experiments
+N N,judgment models
+A N,clause-level Bi-LSTMs
+A N,raw audios
+A,semantics
+N N,generation systems
+A,Inter-EC-Bounds
+N P N,models of emotions
+A N P N,categorical models of emotions
+A N P N,Semantic orientations of words
+A N,negative samplings
+A N,cartesian product
+A N N,highest recognition rates
+A N,sequential models
+A N N,full test sets
+N N,precision scores
+N N,language periods
+N N,feature spaces
+R,temporallies
+N N,extraction performances
+N P N N,performances of emotion extraction
+N N,Mel frequencies
+A N,original datasets
+A N,standard deviations
+N,subtypes
+A N,enumerative representations
+N,heatmaps
+N,CGMMS
+N N,multi-label classifications
+N N,log energies
+N P N,distributions of emotions
+N N,emotion distributions
+A N,main contributions
+A C A N,explicit or implicit manners
+A N,affective meanings
+A N,situational contexts
+A N,linguistic analyses
+A A N,in-depth linguistic analyses
+N C A N,source and vocal tracts
+N N,sentence levels
+A N,cross-entropy errors
+A N N,virtual training environments
+A N,human subjectss
+N N,VAD lexicons
+A N,subjective natures
+N P N,descriptionss of characters
+A N N,causal relation detections
+N N,character emotionss
+A N,dynamic ranges
+N N,word senses
+A N,negative seeds
+N P N,recognitions of emotions
+A N P N,automated recognitions of emotions
+A N,artificial intelligences
+A N,diachronic corporas
+N N N,emotion detection systems
+A,nonverbals
+A N,present studies
+A A N,average different rates
+A A N,Autoassociative Neural Networks
+N,LIWCS
+N P N N,feasibilities of the ECPE task
+N P N,resultss of emotion
+N N,input frames
+N,summarizations
+N N,dialogue evaluations
+A N N,female emotion recognizers
+N N,input vectors
+N N,arousal dimensions
+A N N,automatic evaluation tools
+N N,generation losses
+N N,language modelings
+N N N,emotion recognition performances
+N N,time spans
+A N,human ratingss
+A N,historical emotions
+N,F0rates
+N N,master sets
+N N,user emotions
+N P A N,intensities of emotional expression
+N N,sentiment classifications
+N N,user satisfactions
+N A N,LOO cross-validation methods
+N N,LP analyses
+A A N,neutral emotional states
+N P N,contexts of an emotion
+A N,physical make-ups
+N P N N,sets of cause clauses
+A N,common emotions
+N P A N,efforts of human evaluation
+N N,sentiment informations
+A N N,historical sentiment informations
+A N,lexical graphs
+A N,strict pipelines
+N N N N,emotion cause detection systems
+A,unsuperviseds
+N P N,classifications of emotions
+N N,emotion relationss
+N N,attention models
+N N,data analyses
+A N N,functional data analyses
+N P N N,elements of the world model
+A N,semantic informations
+N N,speech corpora
+A N,large datasets
+A N,upper layers
+A N,social cards
+N N N,feature selection procedures
+N P N N,regionss of the speech signal
+N N,decision rules
+A N N,neural network architectures
+A,bi-directionals
+A N P N,potential pairss of emotions
+N N N,Spearman Rank Coefficients
+N,EmoLexGIs
+A N,semi-supervised methods
+N N,speech recognizers
+A,probabilistics
+A N N,relative classification errors
+A N,human speeches
+A,upper-cases
+A N,emotional tones
+N N,vowel segments
+A N,human referencess
+A,non-evocatives
+N P N,personalities of the speaker
+A,text-baseds
+N P N,properties of interest
+A A N N,speech-based natural language generations
+A,Inter-CE-Bounds
+N N,pitch periods
+A,word-levels
+A N,CNN models
+N,hyperparameters
+A,GPT-2S
+A N,sequence-level emotions
+A N,emotional contents
+N N,term-emotion pairs
+A,cross-entropies
+A N,pre-trained models
+N N,inter-annotator agreements
+N,TensorFlows
+A,clause-levels
+N,word-emotions
+N,baselines
+A,cross-validations
+N,emotions
+N N,root nodes
+N N,research areas
+A A N,simple linear classifications
+N C A N,selection and backward eliminations
+N N,convolution layers
+N V A,results are consistents
+N N,forest structures
+N P N,pairs of items
+N P A N,pairss of distinct items
+A N,linear transformations
+A N,synchronic evaluations
+A N N,final softmax layers
+N A N,mel-frequency cepstral coefficientss
+A N N,full seed sets
+A N,previous studies
+A N,impulse-like excitations
+N,cognitions
+A N N,distant supervision approaches
+A N,embedding-based metricss
+A N,propositional statementss
+A N,gender-dependent emotions
+N N,emotion tags
+N N,NLG systems
+N N,testing corpora
+A N,two-step frameworks
+N P A N,instantss of significant excitation
+A N,emotional tendencies
+N P N,domains of children
+N N,Event Analyses
+A N N,original beam searches
+N N,background moods
+N N,annotation schemes
+A N,combined trainings
+N C N N,energy and pitch contours
+N P A N,notions of basic emotions
+N P A N,qualities of emotional expression
+N,METEORS
+N P A N,approximations of the Pareto set
+N,cosines
+A N,enhanced versions
+N N,emotion factors
+N N,Twitter APIS
+A N N,Natural Science Foundations
+N,Initializations
+A N,lower ranges
+A,numerics
+A N,unsupervised methods
+N N,focus sentences
+N P A N,shades of the lexical item
+A N N,individual emotion extractions
+A N P N,emotional affinities of sentences
+A A N,top ranking systems
+A N,interactive machines
+N P N,sets of tuples
+A,multi-modals
+N N,noise ratios
+A N,best-first searches
+N N P N,complexity natures of emotion
+N N,adaptation intervals
+A N,emotional behaviors
+A N,consistent evaluations
+A N N,distant supervision methods
+A N,Bi-LSTM classifiers
+A N P N N,larger numbers of affect lexicons
+A N,reset gates
+N N,feature subsystems
+A N,emotional conversation
+A A N,gold standard lexicons
+N,mini-batches
+A N,Base Features
+A N N N,human speech production mechanisms
+N,integers
+N P N N,distributions of the i-th clause
+A N,supervised machines
+N P N,detections of emotion
+A N N,early representative works
+A N,content wordss
+A N,empathic generations
+N P N,windows of size
+A N,semantic inputs
+N N,dropout rates
+N P N,meanings of the sentences
+A N,large corpora
+A N,statistical descriptions
+N N,Resources allocations
+A N,ER performances
+N N,word-context pairs
+N N,application areas
+A,deltas
+N N,Problem Definitions
+N N,transition matrices
+A N,simple classifiers
+N N P N,VAD models of emotion
+N N,word polarities
+A N,seq2seq tasks
+A N,average results
+N N,polarity inductions
+N N P N,input sequences of Model
+N P A N,outputs of neural network
+N N,rating points
+A,human-likes
+A N,best correlations
+N,Multi-kernels
+A N N,neutral speech informations
+A N P N,extensive analyses of the annotations
+N N,data tests
+N N,emotion perceptions
+N N,plot developments
+A N,literary textss
+N P N,categories of emotion
+N N,target words
+N N,validation samples
+N N,classification algorithms
+N N,focus clauses
+N N,conversation corpora
+N N,sign tests
+N N N,target language stages
+A N,average numbers
+N P A N,probabilities with the best model
+N N,emoprepend models
+A N,current populations
+N N N,crossover operator types
+N P N,dimensions of word
+A N,beneficial features
+N P A N,informations of neutral speech
+N P N,emotionss of the speaker
+A N,important cues
+A N,global guidances
+N N N,target term-emotion pairs
+A N,outs-of-core classifiers
+N N,ZFF signals
+N N N,extract match ratios
+A N,2nd Experiments
+N N,emotion modelings
+N A N,pitch synchronous analyses
+A N,unrated words
+A N N,hidden Markov models
+N P N,feelers of an emotion
+N N,knowledge bases
+N P N N,lists of cause candidates
+N N,multi-label approaches
+N N,vector representations
+A N,diachronic settingss
+N P N,improvements of Inter-CE
+N N,split-half reliabilities
+N N,dialogue generations
+A N,unique labels
+A N,emotional inputs
+N,crowdsourcings
+N N,models emotions
+A N,psychological researches
+A N,affective informations
+N N,feature representations
+N N,search spaces
+A N,average scores
+N N,sentence lengths
+A N,binary strings
+A,two-levels
+A N N,Higher readability scoreses
+A N N,Emotional language generations
+N P A N,presences of causal relations
+N P N N,sets of speech signal
+A N,single utterances
+A N,primary effects
+N P N,distributions of the feature
+N N,testing sets
+N P N,characteristicss of voice
+A N,arbitrary baselines
+R,iterativelies
+N P N,effectss of emotion
+A N,critical issues
+A N,conceivable surrogates
+A N,uniform distributions
+N P N,amounts of individuals
+A A N,probabilistic neural networks
+A N,F1 measures
+N P N,setss of rankings
+N,Farringtons
+A N,real-time performances
+N P A N,results of the automatic evaluation
+A N,gender-independent classifications
+N P N,genders of speakers
+N N N,emotion recognition procedures
+N,taxonomies
+N,negations
+N N N,case frame structures
+N N,outs-of-domain data
+A N,efficient features
+N N,feature streamss
+A N,vocal cues
+A N,upper-case words
+A N,emotional databases
+R A N,substantially larger numbers
+N N,human-machine dialogues
+A N,human preferences
+A N,vectorial emotions
+N N,confusion matrices
+N N,sampling rates
+A N,prompt words
+A N,manual inspections
+A N,careful investigations
+A N N,vocal fold vibrations
+N N,recognition modules
+N P N N,sets of emotion clauses
+A N,suprasegmental levels
+A N N,malicious data entries
+N N N,Movie Review datasets
+A N,binary tags
+A N,personal spaces
+N P N,emotions of joy
+A N,expanded sets
+N N,SVM baselines
+A N,high intensities
+N P N,patients of the event
+A,Audio-Visuals
+N N,training materials
+A N N,highest classification accuracies
+N,wizards-of-oz
+A N,weighted averages
+A N,unified frameworks
+N P N,kinds of comparison
+A N P N,highest amounts of emotion
+A N,direct speech
+N P N N,predictionss of cause extraction
+N N,speaker recognitions
+N N,density functions
+N N,hashtag forms
+A N,prior researches
+A N N,emotional chat machines
+N P N,contexts of the conversation
+N N,recognition stages
+N N P N,block diagrams of the feature
+N P N,abilities of the model
+A N P N,lowest amounts of emotion
+A N,contemporary datasets
+A N,causal relationships
+N N,single-label classifications
+A N,emotional situations
+N N,Sentiment Inferences
+N C A N,features and structural featuress
+N P N,degrees of control
+A N,pitch-related featuress
+N N,transformer architectures
+N N,training objectives
+N N,wLPCC vectors
+A N,separated tunings
+N P N,probabilities of the output
+A N,bottom-line competitions
+N,F1rates
+N P N N,differences of the output probability
+N N N,gender detection systems
+A N N N,text-based emotion prediction problems
+N,alternations
+A N N,deep memory networks
+A N,non-verbal behaviors
+N N,emotion interactions
+A N,strong emotions
+A N,Seq2Seq models
+N N,training processes
+A N,non-verbal descriptions
+N N,generation method
+A N,previous researches
+A N,specific feelings
+N C A N,speech and neutral speeches
+N N,speech frames
+N P A N,deviationss of emotional speech
+A N N,limited seed sets
+N N,polarity regressions
+N N,pair filters
+N N,parameter settingss
+R,linearlies
+N N,annotator pairs
+A N,single filters
+N C N N,Emotion and Cause Extractions
+A N,positive emotions
+N N N,evaluation data conditions
+N,NRC-EmoLexes
+A N,intense emotionss
+A A N,deep neural networks
+N N,loss functions
+A N,linguistic units
+N N,batch size
+N N,information contents
+N,F-scoreses
+N N,SVM regressions
+N N,regularization parameters
+N N,AMT workerss
+N P N,sources of excitation
+N,negativities
+N N,emotion identifications
+A C A N N,male and female emotion classifications
+N P N N,descriptions of character emotions
+A A N,raw audio inputs
+N P N,framess of an utterance
+N,dimensionalities
+N V A,problem is conventionals
+N N,VAM databases
+A N,large collections
+N P N,diversities of responses
+A N,similar prosodies
+N V A,sentence is emotionals
+A N N,highest emotion scores
+N P N,rates of pitch
+N,thesauruses
+N,extractions
+N,classifications
+N N,probability distributions
+A N,automatic recognitions
+N N,Emotion-Channel associationss
+N N,circumplex models
+N N,word-emotion associations
+N,word-contexts
+N N,TEP problems
+A N,official submissions
+N N N,text generation models
+A N,emotional generations
+N N,i-th clauses
+A A N,feed-forward neural networks
+N N,text instances
+A N,benchmark datasets
+N N,NLPCC datasets
+A N N,gender-dependent emotion recognizers
+N P N,forms of hashtags
+N,correlations
+N,endpoint
+N,evaluations
+N,verbs
+A,n-tuples
+N,propagations
+N P N,cultivations of talent
+N,degenerations
+A N,emotional evaluations
+A,sense-inventories
+A N,high-quality emotions
+N,lab-conditions
+N,metadatas
+A,folk-tales
+N,defense
+A N,hourly pays
+A N,ORDINARY FOLK-TALES
+A,triples
+N,pitch-tracks
+A N,base models
+N N,LSTM models
+A N P N,peak values of the formant
+N,strong-intensities
+A,Upper-Bounds
+A,heuristics
+A N,rank scores
+N,notations
+N N,bootstrap resamplings
+A N,context-dependent semanticss
+A,non-differentiables
+N,z-transformations
+N P N N,ranges of the intensity scale
+N,ground-truths
+N,abscissas
+A N,GPT-2 models
+A N,benchmark systems
+N,Hashtag-Query-Terms
+N N,Data Preparations
+A A N,Passive Aggressive classifiers
+N,BiLSTMs
+N,authorships
+N P N,variants of Inter-CE
+A N,emotional tests
+N,datapoints
+N,back-propagations
+N,nominalizations
+A,non-evaluatives
+N,cross-clauses
+A,perceptuals
+N,tanhs
+A,pfinals
+A N,official evaluations
+A N,emotional categorizations
+N N,evaluation set-ups
+N N,supervisor exams
+A N,rank correlations
+N,beam-searches
+A,medians
+N N,post-facto interviews
+A N,pseudo-boolean optimizations
+N P A N,productions of emotional speech
+A N,generic vocabuaries
+A N,discriminating features
+N N,Ethics Committee
+A,tie-breakings
+N,particularies
+N,word-senses
+A N,passive aggressive
+A N,standard back-propagations
+N C N N,predication and cause predications
+N,Z-tests
+N,synsets
+A,superscripts
+A,grammaticals
+A,beatifics
+A N,alternative solutions
+A,harmonics
+A,italics
+N N,sadness datasets
+A N N,singular value decompositions
+A N,states-of-the art methods
+N,non-emotions
+N,XLNets
+N,lemmatizations
+N,glottises
+A,down-samplings
+A,sigmoids
+R,textuallies
+A N,3-D audios
+A,37dimensionals
+N,high-coverages
+A N,average lengths
+N,vertice
+N,secularizations
+N,human-labels
+A,demotionals
+N,multi-clauses
+N,co-references
+N,No-Query-Terms
+N N,mini-batch sizes
+A N,naive baselines
+A N,MOGA-based features
+A,modals
+N,EmoLexBis
+N,ttests
+N N,mood hashtags
+A,N-grams
+N,T-tests
+N,holodecks
+A,unessentials
+N,interpolations
+N,Bi-LSTMss
+R,arbitrarilies
+N,self-evaluations
+A,blithes
+N,stylometries
+N,EmoDS-EVs
+N,activation-deactivations
+N,cepstrums
+N,sMBRs
+A,N-candidateses
+A N,total anger
+N,EmoDS-MLEs
+N,asurrogates
+A,audios
+A,neutrals
+N,nouns
+A,linguistics
+N,intensities
+N,jitters
+N,compressions
+N,databases
+A,states-of-the art
+A,respectives
+N,coherences
+A,statisticals
+A,manuals
+N,layers
+N,intuitions
+A,nominals
+A,gradients
+N,disgusts
+N,probabilities
+N,inputs
+A,implicits
+N P N,meanings of words
+A N,key components
+N,deviations
+N,frequencies
+A,explicits
+N,boredoms
+N P N,states of the art
+N,variances
+N,models
+N N,test results
+N,dialogues
+N,domains
+R,explicitlies
+N,durations
+A,distincts
+A,indicatives
+A,coherents
+R,implicitlies
+N,graphs
+N N,pilot studies
+A,disgusteds
+N,predictions
+N,speakers
+A,evocatives
+N,components
+N,dimensions
+N,sentiments
+N,methods
+N,anticipations
+N,vocabularies
+N,frameworks
+N,variables
+N,representations
+N,dejections
+N,convergences
+N,frames
+N,sequences
+N,sentences
+N,outputs
+N,clusters
+N,pitches
+N,biases
+N,trainings
+N,voices
+N,contrasts
+N,exaggerations
+N,noises
+A,realistics
+N,discriminations
+N,sensitivities
+N,libraries
+N,impulses
+N,significances
+N,engagements
+N,anxieties
+N,affections
+N,agreements
+N,SNoWs
+N,personalities
+N,silences
+R,invariablies
+N,factors
+N,penalties
+N,gains
+N,HMMS
+N,GCIS
+N,LPCS
+N,CNNS
+N,RNNS
+N,URLS
+N,VAES
+N,SVMS
+N,DNN-HMMS
+N,CRFS
+N,MSFS
+N,NPZCS
+A N,explicit manners
+A N,implicit manners
+A N,mental healths
+A N,physical healths
+N,emods
+N,turkers
+N,grnns
+N N,aann models
+N,mfccs
+N,hmms
+N P A N,sets of basic emotion
+A A N,conventional prosodic features
+N,sgns
+N,affective tweets
+N,gcis
+N,epochs
+A N N N,neutral speech aann models
+N,lpcs
+N N,vad dimensions
+N N,nlp applications
+A N N,practical nlp applications
+N P N,qualities of annotation
+N N,classification results
+A N P N,weighted sums of embedding
+N,cnns
+N P N,percentages of time
+N,rnns
+N,rmds
+N P N,results of the experiment
+A N N,high snr regions
+N P N,models of emotion
+A N P N,categorical models of emotion
+A N P N,semantic orientations of word
+A N,computational linguistics
+N N,lpcc components
+N N,plp coefficients
+N N,lfpc components
+N N,svdppmi embeddings
+A N A N,linear prediction cepstral coefficients
+A N N,benchmark ece corpus
+N P N,distributions of emotion
+A N,alternative approaches
+N P N,recognition of emotions
+N N,lp analysis
+N P N N,sets of cause clause
+N N,nlp tasks
+N P N,classifications of emotion
+N N,naïve bayes
+N,lstms
+N,wlpccs
+N,urls
+N N,lpc coefficients
+N N,bws annotations
+N N,ece corpus
+A N N,glottal closure instants
+N,vaes
+N N,event analysis
+N P A N,notions of basic emotion
+A N,emolexwal rows
+A N P N,emotional affinities of sentence
+N P N,sets of tuple
+A N P N N,larger numbers of affect lexicon
+N N,mfcc coefficients
+N N,bleu scores
+N P N,meanings of the sentence
+N N,emolexgi rows
+N N N,weibo post-response pairs
+N N,mfcc components
+A A A N,syntactic story-related orthographic conjunctions
+A N N,higher readability scores
+A N,vocal cues
+N A N,frequency cepstral coefficients
+A N N,traditional ece methods
+N N,context windows
+N P N N,sets of emotion clause
+N,perturbations
+A N,experimental settings
+N,keras
+N,emods-bs
+N,f-scores
+N P N,typess of feature
+N N,amt workers
+N P N N,descriptions of character emotion
+N P N,diversities of response
+N N,emotion-channel associations
+N,multi-words
+N,svms
+N,dnn-hmms
+N,crfs
+N,lpccs
+N,msfs
+N,vertexes
+N,bi-lstms
+A,n-candidates
+N,npzcs
+N P N,meanings of word

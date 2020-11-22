@@ -1,0 +1,196 @@
+#	type	pattern	pilot	spec	freq	dFreq	tfIdf	Term?	
+1	T	N	RAVDESS	4,92	18	1	18,00	OK	
+2	T	N	Enc-bef	4,87	16	1	16,00	OK	
+3	T	N	corpus	4,84	15	2	7,50	OK	
+4	T	N N	speech recognition	4,81	14	1	14,00	OK	
+4	V[s]	A N N	automatic speech recognition	4,27	4	1	4,00	OK	
+5	T	N	Enc-aft	4,78	13	1	13,00	OK	
+6	T	N	CREMA-D	4,70	11	1	11,00	OK	
+7	T	N	datasets	4,70	11	1	11,00	OK	
+8	T	N	decoder	4,66	10	1	10,00	OK	
+9	T	A N	emotional speech	4,62	9	1	9,00	OK	
+10	T	A N	manual transcripts	4,62	9	1	9,00	OK	
+11	T	N	encoder	4,57	8	1	8,00	OK	
+12	T	N N	Speaker Identity	4,57	8	1	8,00	OK	
+14	T	N	thankfulness	4,44	6	1	6,00	OK	
+15	T	A N	Seq2Seq models	4,44	6	1	6,00	PL	
+16	T	N	LSTM	4,44	6	1	6,00	OK	
+17	T	N N	MSP-IMPROV Target	4,40	11	1	11,00	OK	
+17	V[s]	N N N	MSP-IMPROV Target RAVDESS	3,96	2	1	2,00	OK	
+18	T	N N	Actor Identity	4,36	5	1	5,00	OK	
+19	T	N N N	speech recognition performance	4,36	5	1	5,00	OK	
+20	T	N N P N	Confusion matrix of model	4,36	5	1	5,00	OK	
+21	T	N N	dialogue generation	4,36	5	1	5,00	OK	
+21	V[s]	A N N	Automatic Dialogue Generation	3,96	2	1	2,00	OK	
+22	T	A N	conversational agent	4,36	5	2	2,50	#N/A	OK
+24	T	A	Seq2Seq	4,32	9	1	9,00	OK	
+25	T	N	dataset	4,27	8	2	4,00	OK	
+26	T	A N	statistical significance	4,27	4	1	4,00	OK	
+26	V[s]	A N P N	Statistical Significance of Emotion	3,96	2	1	2,00	OK	
+27	T	N N	dialogue models	4,27	4	1	4,00	OK	
+28	T	N N	emotion classifier	4,27	4	1	4,00	OK	
+28	V[s]	N N N	emotion mining classifier	4,14	3	1	3,00	OK	
+29	T	A N	neutral speech	4,27	4	1	4,00	OK	
+31	T	N N	target utterances	4,27	4	2	2,00	OK	
+32	T	N	vector	4,27	4	1	4,00	OK	
+33	T	N	APIs	4,27	4	1	4,00	PL	
+34	T	A N N	automatic speech recognition	4,27	4	1	4,00	OK	
+35	T	N N	emotion mining	4,27	4	1	4,00	OK	
+35	V[s]	N N N	emotion mining classifier	4,14	3	1	3,00	OK	
+36	T	N N	recognition accuracy	4,14	3	1	3,00	OK	
+37	T	A N	lexical content	4,14	3	1	3,00	OK	
+38	T	N N	recognition systems	4,14	3	1	3,00	#N/A	OK
+39	T	N N N	Word Error Rate	4,14	3	1	3,00	OK	
+42	T	N	1-CR	4,14	3	1	3,00	OK	
+43	T	N N N	emotion mining classifier	4,14	3	1	3,00	OK	
+44	T	A	trainable	4,14	3	1	3,00	OK	
+45	T	A N	emotional content	4,14	3	1	3,00	OK	
+46	T	N C N N	RAVDESS and MSP-IMPROV Target	4,14	3	1	3,00	OK	
+48	T	N N	ASR system	4,14	3	1	3,00	OK	
+49	T	N	WERs	4,14	3	1	3,00	PL	
+50	T	N P N	sequence of words	4,14	3	1	3,00	OK	
+51	T	N N	ASR performance	4,14	3	1	3,00	OK	
+52	T	N P N	impact of Emotion	4,14	3	1	3,00	OK	
+53	T	N N	target sentence	4,14	3	1	3,00	OK	
+54	T	A N	specific emotion	4,14	3	1	3,00	OK	
+55	T	N P A N	performance of commercial systems	4,14	3	1	3,00	OK	
+56	T	N	cross-comparison	4,04	12	1	12,00	OK	
+57	T	N N	cross-comparison WER	4,02	9	1	9,00	OK	
+58	T	A N	Emotional intelligence	3,96	2	1	2,00	OK	
+59	T	N V A	emotion is identical	3,96	2	1	2,00	OK	
+60	T	A N	hidden state	3,96	2	1	2,00	OK	
+61	T	N N	Spearman Correlation	3,96	2	1	2,00	OK	
+62	T	A N	complete conversations	3,96	2	1	2,00	OK	
+63	T	A N	relative performance	3,96	2	1	2,00	OK	
+65	T	N N	source utterance	3,96	2	1	2,00	OK	
+67	T	N P N N	matrix of model Enc-aft	3,96	2	1	2,00	OK	
+68	T	N N	ANOVA analysis	3,96	2	1	2,00	OK	
+69	T	A N N N	neural dialogue generation systems	3,96	2	1	2,00	OK	
+70	T	N N	source target	3,96	2	1	2,00	OK	
+71	T	A N	previous utterance	3,96	2	1	2,00	OK	
+73	T	N N N	speech recognition systems	3,96	2	1	2,00	OK	
+74	T	N N	language model	3,96	2	1	2,00	OK	
+75	T	A N P N	Statistical Significance of Emotion	3,96	2	1	2,00	OK	
+76	T	N N	response generation	3,96	2	1	2,00	OK	
+77	T	N	FastText	3,96	2	1	2,00	OK	
+79	T	N N N	MSP-IMPROV Target RAVDESS	3,96	2	1	2,00	OK	
+81	T	N N	emotion tagger	3,96	2	1	2,00	OK	
+83	T	N	P-value	3,96	2	1	2,00	OK	
+84	T	A N N	Automatic Dialogue Generation	3,96	2	1	2,00	OK	
+85	T	N N	machine translation	3,96	2	1	2,00	OK	
+86	T	N	interlocutor	3,96	2	2	1,00	OK	
+87	T	A N	observed WER	3,96	2	1	2,00	OK	
+88	T	N N	source sentences	3,96	2	1	2,00	OK	
+89	T	N	F-value	3,96	2	1	2,00	OK	
+91	T	N	transcription	3,96	2	1	2,00	OK	
+92	T	A N	average accuracies	3,96	2	1	2,00	#N/A	OK
+93	T	A N	generative models	3,96	2	1	2,00	OK	
+95	T	N N	mapping rules	3,96	2	1	2,00	OK	
+96	T	A N	highest impact	3,96	2	1	2,00	OK	
+97	T	A N	natural speech	3,96	2	1	2,00	OK	
+98	T	N N	Dec model	3,96	2	1	2,00	OK	
+99	T	N N	emotion vector	3,96	2	1	2,00	OK	
+100	T	N N N	input message-response pairs	3,96	2	1	2,00	OK	
+101	T	N N	model Enc-bef	3,96	2	1	2,00	OK	
+102	T	N N	dialogue corpora	3,96	2	2	1,00	#N/A	OK
+103	T	A N	nonimprovised speech	3,84	3	1	3,00	OK	
+106	T	N	F1-score	3,66	1	1	1,00	OK	
+107	T	A	template-based	3,66	1	1	1,00	OK	
+110	T	N	spoken-content	3,66	1	1	1,00	OK	
+113	T	A	non-improvised	3,66	1	1	1,00	OK	
+114	T	N	LSTMs	3,66	1	1	1,00	PL	
+116	T	N N	Adam optimizer	3,66	1	1	1,00	OK	
+117	T	R	grammatically	3,66	1	1	1,00	OK	
+118	T	N	diagonals	3,66	1	1	1,00	OK	
+120	T	A N	maximum-likelihood estimation	3,66	1	1	1,00	#N/A	OK
+121	T	N	NonEmotion	3,66	1	1	1,00	OK	
+123	T	N	Non-emotion	3,66	1	1	1,00	OK	
+125	T	R	empirically	3,66	1	1	1,00	OK	
+126	T	N	F-values	3,66	1	1	1,00	OK	
+129	T	N P N N	size of the vocabulary space	3,66	1	1	1,00	#N/A	OK
+132	T	N	coder	3,66	1	1	1,00	OK	
+134	T	N	MFCCs	3,66	1	1	1,00	PL	
+135	T	A N	minimal length	3,66	1	1	1,00	#N/A	OK
+137	T	N N	formant frequencies	3,66	1	1	1,00	#N/A	OK
+139	T	N A N	Mel-frequency cepstral coefficients	3,66	1	1	1,00	OK	
+142	T	A	non-committal	3,66	1	1	1,00	OK	
+144	T	N N	dialog structure	3,66	1	1	1,00	#N/A	OK
+147	T	N	Goldwater	3,66	1	1	1,00	OK	
+148	T	A	data-driven	3,66	1	1	1,00	OK	
+151	T	N	subset	3,66	1	1	1,00	OK	
+152	T	A	impactful	3,66	1	1	1,00	OK	
+155	T	N	HAPINESS	3,66	1	1	1,00	OK	
+156	T	A N	true WER	3,66	1	1	1,00	#N/A	OK
+161	T	N	MSPIMPROV	3,66	1	1	1,00	OK	
+163	T	N	MFCC	3,66	1	1	1,00	OK	
+164	T	N	overfitting	3,66	1	1	1,00	OK	
+165	T	N	Sequence-tosequence	3,66	1	1	1,00	#N/A	OK
+166	T	A N	major components	3,66	1	1	1,00	#N/A	OK
+169	T	N	concatenation	3,66	1	1	1,00	OK	
+171	T	A	state-based	3,66	1	1	1,00	OK	
+172	T	N	utterances	3,37	25	2	12,50	OK	
+173	T	A	metric	3,06	8	1	8,00	#N/A	OK
+174	T	N	emotion	3,03	137	2	68,50	OK	
+175	T	N	Correlation	3,03	7	1	7,00	OK	
+177	T	A	semantic	2,89	2	1	2,00	OK	
+178	T	N	approximation	2,82	2	1	2,00	OK	
+179	T	A	NEUTRAL	2,71	11	1	11,00	OK	
+180	T	N	sadness	2,69	15	2	7,50	OK	
+181	T	N	evaluation	2,65	7	2	3,50	OK	
+182	T	N	disgust	2,55	8	2	4,00	OK	
+184	T	N	accuracies	2,51	12	2	6,00	#N/A	OK
+185	T	A	generic	2,46	1	1	1,00	OK	
+186	T	N	dialogue	2,45	21	2	10,50	OK	
+190	T	N	model	2,29	59	2	29,50	OK	
+191	T	N	interactions	2,29	3	1	3,00	#N/A	OK
+193	T	R	manually	2,27	1	1	1,00	OK	
+194	T	N	token	2,26	3	1	3,00	#N/A	OK
+195	T	A	specific	2,24	6	2	3,00	#N/A	OK
+197	T	R	randomly	2,19	1	1	1,00	OK	
+198	T	N	guilt	2,17	11	1	11,00	OK	
+199	T	N	input	2,17	9	1	9,00	OK	
+202	T	A	ambiguous	2,09	1	1	1,00	OK	
+203	T	N	speech	2,08	46	2	23,00	OK	
+204	T	N	anger	2,06	19	2	9,50	OK	
+206	T	R	emotionally	2,05	4	2	2,00	OK	
+208	T	N	content	2,03	14	1	14,00	OK	
+209	T	N	learning	2,01	4	1	4,00	#N/A	OK
+210	T	A	natural	2,01	7	1	7,00	OK	
+212	T	N	Pearson	2,00	3	1	3,00	OK	
+213	T	N N	side effect	1,97	1	1	1,00	#N/A	OK
+214	T	A	coherent	1,97	1	1	1,00	OK	
+217	T	N	parameters	1,88	1	1	1,00	OK	
+218	T	N	speaker	1,87	12	1	12,00	OK	
+220	T	N	precision	1,85	2	1	2,00	OK	
+221	T	N	loneliness	1,84	1	1	1,00	OK	
+223	T	N	variation	1,84	5	1	5,00	#N/A	OK
+227	T	N	response	1,80	32	1	32,00	#N/A	OK
+229	T	N	intensities	1,76	2	1	2,00	#N/A	OK
+234	T	N	sentences	1,71	25	2	12,50	#N/A	OK
+236	T	N	HAPPINESS	1,68	2	1	2,00	OK	
+238	T	N	experiments	1,64	4	2	2,00	OK	
+239	T	N	data	1,61	6	2	3,00	OK	
+241	T	N	conversations	1,55	5	1	5,00	#N/A	OK
+242	T	A	afraid	1,55	4	2	2,00	OK	
+243	T	N	surprise	1,54	10	1	10,00	OK	
+247	T	N	layer	1,53	1	1	1,00	OK	
+256	T	N	method	1,46	7	2	3,50	OK	
+257	T	N	fear	1,46	13	2	6,50	OK	
+258	T	N	generation	1,45	9	1	9,00	OK	
+259	T	N	samples	1,45	3	2	1,50	OK	
+266	T	N	compassion	1,43	1	1	1,00	OK	
+268	T	A	dull	1,42	1	1	1,00	OK	
+270	T	N	love	1,39	9	1	9,00	OK	
+273	T	N	source	1,35	10	1	10,00	#N/A	OK
+275	T	A	intense	1,34	1	1	1,00	OK	
+282	T	N	output	1,25	3	2	1,50	OK	
+284	T	N	systems	1,23	27	2	13,50	#N/A	OK
+290	T	N	recordings	1,19	1	1	1,00	OK	
+291	T	A	dark	1,17	1	1	1,00	OK	
+292	T	N	framework	1,17	1	1	1,00	OK	
+329	T	N	style	0,83	3	2	1,50	OK	
+332	T	A	Happy	0,81	3	2	1,50	OK	
+342	T	N	display	0,75	1	1	1,00	#N/A	OK
+344	T	N	versions	0,73	1	1	1,00	#N/A	OK
+350	T	N	confidence	0,70	2	1	2,00	OK	
+374	T	N	agreement	0,46	1	1	1,00	OK	

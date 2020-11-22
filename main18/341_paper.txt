@@ -1,0 +1,118 @@
+Speech-Based Emotion Recognition: Feature Selection by Self-Adaptive Multi-Criteria Genetic Algorithm
+Abstract
+Automated emotion recognition has a number of applications in Interactive Voice Response systems, call centers, etc. While employing existing feature sets and methods for automated emotion recognition has already achieved reasonable results, there is still a lot to do for improvement. Meanwhile, an optimal feature set, which should be used to represent speech signals for performing speech-based emotion recognition techniques, is still an open question. In our research, we tried to figure out the most essential features with self-adaptive multi-objective genetic algorithm as a feature selection technique and a probabilistic neural network as a classifier. The proposed approach was evaluated using a number of multi-languages databases (English, German), which were represented by 37and 384-dimensional feature sets. According to the obtained results, the developed technique allows to increase the emotion recognition performance by up to 26.08% relative improvement in accuracy. Moreover, emotion recognition performance scores for all applied databases are improved.
+Keywords: speech-based emotion recognition, feature selection techniques, multi-criteria genetic algorithm
+
+1. Introduction
+Machines are still quite bad at recognizing human emotions, meanwhile such an opportunity might be useful in various applications, including improvement of the spoken dialogue systems (SDSs) performance or call centers quality monitoring.
+Speech-based emotion recognition (ER) is a classification problem which can be solved by various methods based on the supervised learning approach. One may extract a lot of numerical features out of speech waveforms. A feature selection procedure results in trade-off between time-consuming feature extraction and the accuracy of the model. However, some of features could be highlycorrelated or their variability level could be dramatically low, therefore some attributes could not bring a beneficial impact to the system or they even could lower its performance. That is why, an effective feature set for the ER task (but also for the problems of speech-based speaker (SI) and gender (GI) identification) should be both representative and compact. Moreover, removing irrelevant attributes could significantly improve the performance of speech-based ER, SI and GI models.
+Our proposal uses a multi-objective genetic algorithm (MOGA), which is a heuristic algorithm of pseudo-boolean optimization, in order to maximize the ER accuracy and minimize the number of items in feature sets simultaneously. We also propose here a self-adaptive scheme of MOGA, which exempts from the necessity of algorithm’s parameters choosing.
+In this study, two feature sets of speech signals (37and 384-dimensional) have been used to represent 3 emotional speech databases of 2 languages (English, German), acted and non-acted recordings. It turns out, that the usage of a self-adaptive MOGA could improve the accuracy of the ER procedure up to 26.08% (for the 384-dimensional feature set) for some of the databases.
+The rest of the paper is organized as follows: the 2. Section
+presents significant related work. The 3. Section describes the applied corpora and renders their differences. Our approach to automated emotion recognition improvement is proposed in the 4. Section having its results of numerical evaluations in the 5. Section. Conclusion and future work are described in the 6. Section.
+2. Significant Related Work
+One of the pilot experiments which deals with speech-based emotion recognition is in (Kwon et al., 2003). The authors compared the emotion recognition performance of various classifiers: support vector machine, linear discriminant analysis, quadratic discriminant analysis and hidden Markov model on SUSAS (Hansen et al., 1997) and AIBO (Batliner et al., 2004) databases of the emotional speech. The following set of speech signal features has been used in the study: pitch, log energy, formant, mel-band energies, and mel frequency cepstral coefficients (MFCCs). The authors have managed to achieve the highest value of the accuracy (70.1% and 42.3% on the databases, correspondingly) using Gaussian support vector machine.
+The authors in (Gharavian et al., 2012) highlighted an importance of the feature selection for the ER task, therefore an efficient feature subset was determined with the fast correlation-based filter feature selection method. The fuzzy ARTMAP neural network (Carpenter et al., 1992) was used as an algorithm of emotion modeling. The authors have achieved over 87.52% of the emotion recognition accuracy on FARSDAT speech corpus (Bijankhan et al., 1994). Another approach for improving emotion recognition has been proposed by Polzehl et al. (2011) by adding linguistic information, e.g., Bag-of-Words or Self-Referential Information. Evaluation with three different databases showed that fusion at the decision level adding confidence scores slightly improves the overall scores. However, evaluating acoustic and linguistic models on separate levels showed the dominance of acoustic models.
+
+In the study a number of speech databases have been used and this section provides their brief description.
+Berlin The Berlin emotional database (Burkhardt et al., 2005) was recorded at the Technical University of Berlin and consists of labeled emotional German utterances which were spoken by 10 actors (5 female). Each utterance has one of the following emotional labels: neutral, anger, fear, joy, sadness, boredom or disgust.
+SAVEE The SAVEE (Surrey Audio-Visual Expressed Emotion) corpus (Haq and Jackson, 2010) was recorded as a part of an investigation into audio-visual emotion classification, from four native English male speakers. The emotional label for each utterance is one of the standard set of emotions (anger, disgust, fear, happiness, sadness, surprise and neutral).
+VAM TheVAMdatabase(Grimmetal.,2008)wascreated at the Karlsruhe University and consists of utterances extracted from the popular German talk-show ”Vera am Mittag” (Vera in the afternoon). The emotional labels of the first part of the corpus (speakers 1-19) were given by 17 human evaluators and the rest of the utterances (speakers 20-47) were labeled by 6 annotators on the 3-dimensional emotional basis (valence, activation and dominance). To produce the labels for classification task we have used just valence (or evaluation) and arousal axis. The corresponding quadrant (counterclockwise, starting in positive quadrant, assuming arousal as abscissa) can also be assigned emotional labels: happy-exciting, angry-anxious, sad-bored and relaxed-serene (Schuller et al., 2009).
+Two corpora (Berlin, SAVEE) consist of acted emotions, whereas VAM database comprises real ones. Acted and non-acted emotions have been considered for the German language, but only non-acted emotions are in English utterances. In comparison with Berlin and SAVEE corpora, VAM database is highly unbalanced (see Emotion level duration columns in Table 1).
+Emotions themselves and their evaluations have subjective nature. That is why it is important to have at least several evaluators of emotional labels. Even for humans it is not always evident to make a decision about an emotional label. Each study, which proposes an emotional database, provides also an evaluators’ confusion matrix and statistical description of their decisions.
+There is a statistical description of the used corpora in Table 1.
+The baseline set of the 37-dimensional feature vector, as well as the feature set used for the Interspeech 2009 Emotion Challenge (384 features) (Kockmann et al., 2009), which were extracted with the Praat (Boersma, 2002) and the openSMILE (Eyben et al., 2010) systems, were used in this study.
+Average values of the following speech signal features were included into the baseline set of features: power, mean, root mean square, jitter, shimmer, 12 MFCCs and 5 formants. Mean, minimum, maximum, range and deviation of the following features have also been used: pitch, intensity and harmonicity (the 37-dimensional feature vector for one speech signal file, in total).
+In this investigation a probabilistic neural network (PNN) was used as a classification algorithm (Specht, 1990) for building emotion models.
+A genetic algorithm (GA), which is an effective pseudoboolean optimization procedure, was chosen to solve the multi-criteria problem. A multi-criteria GA operates with a set of binary vectors coding the subsets of relevant features, where boolean false corresponds to non-essential attributes and true corresponds to essential ones.
+In the Strength Pareto Evolutionary Algorithm (SPEA) (Zitzler and Thiele, 1999), non-dominated points are stored in the limited capacity archive named an outer set. The content of this set is upgraded through the algorithm execution and as a result we have an approximation of the Pareto set.
+The investigated approach works as follows:
+Input:
+· the labeled database divided into training and validation sets;
+· N : the population size; 
+· M : the allowable number of generations. Parameters of the self-adaptive crossover operator:
+· penalty: a fee size for recombination types defeated in paired comparisons;
+· time of adaptation T : the number of generations fulfilled before every resources allocation among recombination types;
+· social card: the minimum allowable size of the subpopulation generated with a crossover operator type;
+· available recombination types:
+J ={0| single-point crossover; 1| two-point crossover; 2| uniform crossover};nj, j ∈ J: the amount of individuals in the current population generated by the j-th type of crossover.
+Output:
+PS = P = {x ̄ }, 1 ≤ i ≤ N: the approximation of the Pareto set;
+P F : the approximation of the Pareto frontier.
+Step 1. Initialization
+Generate an initial population Pt = {xi}, t = 0,
+i = 1, N , uniformly in the binary search space: probabilities of boolean true and false assignments are equal.
+Define initial values nj = |J | .
+
+Step 2. Evaluation of criteria values
+For each individual from Pt, do:
+2.1. Compile the feature subsystem from the database corresponding to the current binary string.
+2.2. Perform classification on the obtained feature subsystem by PNN learned on the training data set.
+2.3. Set the first individual’s criterion value as the relative classification error on the validation sample.
+2.4. Set the second individual’s criterion value as the number of true genes in the binary string.
+Step 3. Composing the outer set
+3.1. Copy the individuals non-dominated over Pt into the  ̄′
+(4)
+intermediate outer set P .
+3.2. Delete the individuals dominated over P ̄′ from the intermediate outer set.
+
+If the capacity of the set P ̄′ is more than the fixed limit N, apply the clustering algorithm (hierarchical agglomerative clustering).
+Compile the outer set Pt+1 with the individuals from  ̄′
+
+Step 4. Fitness-values determination
+Calculate fitness-values for individuals both from the current population and from the outer set.
+
+Step 5. Generation of new solutions
+Set j = 0. For each j-realized recombination type, j ∈ J, do:
+
+1) Set k = 0 and repeat:
+2) Select two individuals from the united set
+􏰄 ̄
+P = Pt+1 􏰂 Pt by 2-tournament selection.
+3) Apply a current type of recombination to individuals chosen in step (2).
+4) Perform a mutation operator: the probability pm is determined according to the rule (Daridi et al., 2004):
+
+1 0.11375 pm=240+ 2t
+
+where t is the current generation number.
+5) Ifk=nj,thenj=j+1,otherwisek=k+1.
+
+Step 6. Stopping Criteria
+sj= 
+penalty,
+nj
+≤ social card otherwise
+ If t = M, then stop with the outcome PS = Pt+1, otherwise t = t + 1 and go to the next step.
+
+
+Step 7. Resources allocation
+If t is a multiple of T , do:
+
+7.1.
+Determine fitness-values qi for all j ∈ J:
+where l = 0 corresponds to the latest generation in the adaptation interval, l = 1 corresponds to the previous one, etc. bj is defined as following:
+where pj is the amount of individuals in the current outer set generated with the j-th type of recombination operator, |P | is the outer set size.
+
+Compare all crossover operator types in pairs based on their fitness-values. Determine sj is the size of a resource given by the j-th recombination type to those which won:
+
+where hj is the number of losses of the j-th operator in paired comparisons.
+Redistribute resources nj based on sj values, j ∈ J. Go to Step 2.
+
+In Steps 4 and 5 standard SPEA schemes of fitness assignment and selection are used.
+The final solution is determined as a point from the Pareto set approximation P S with the lowest value of the relative classification error.
+5. Evaluation and Results
+To investigate the improvement of using the MOGAbased feature selection, the emotion recognition procedure has been conducted on both the baseline feature set (37dimensional) and extended (384-dimensional) one. The first set consists of the most popular features for emotion recognition (cf. (Schmitt et al., 2009)) and has been chosen in order to perform baseline experiments. Obtained results have been compared with ones, which were achieved by performing speech-based emotion recognition procedure with and without proposed multi-objective geneticalgorithm-based feature selection technique on extended feature set. Furthermore, obtained results were compared with ones, which were achieved by applying state-of-theart Principal Component Analysis (PCA) (Pearson, 1901) feature set reduction.
+Dividing the data into the training and the testing sets, the training set was used to create and train a PNN-based emotion model (Experiment 1), as well as for the procedure of feature selection (Experiment 2). During the 2nd Experiment, the used feature set was coded with the boolean vector (true corresponds to the essential attribute, false to the unessential one), the corresponding representation
+ing samples was used in order to create a PNN-based emotion model for each individual of the self-adaptive MOGA. To assess the model’s predictive ability the validation sample was generated as 20% per cent of the training data set. During experiments it was revealed that the PNN performance depended on the sample division significantly. Therefore, we produced the averaged estimations of the relative classification error for all individuals through multiple running (15 times) with the random data division. The testing set was used to get the final assessment of adjusted PNN-based emotion model (for both Experiments) with the feature set selected by MOGA (only for the 2nd Experiment).
+In order to generate more statistically significant results, the complete classification process was run 10 times for each database. For each run, the databases were randomly divided into the training and testing sets (70–30% correspondingly). The final results are shown in Table 2. These results are calculated taking the average of all runs. The first two columns correspond to the PNN-based ER accuracy, which was achieved without feature selection procedure (Experiment 1, baseline for the 37-dimensional feature set, and the 384-dimensional extended one). In the third column, the accuracy of the emotion recognition system using the multi-criteria GA-based feature selection with the average number of selected features. The next column contains the relative accuracy improvement, comparing with the baseline system performance (the 37-dimensional feature set without feature selection procedure).
+Table 3 shows the results comparison of PCAand proposed MOGA-based feature selection/reduction methods. The 0.95 variance threshold was performed on each iteration of PCA in order to create a feature set for training and testing of PNN-based emotional models. The results clearly showed that the proposed method could produce fewer features and the higher ER accuracy simultaneously.
+The results of baseline ER as well as ER with feature sets selected by MOGAand PCA-based feature selection techniques have been examined for significance using the ttest (Student, 1908) for comparing the results of each of the 10 runs of the experiments. All differences are significant with at least α < 0.005.
+As a result, it can be concluded, that the proposed technique could significantly improve the accuracy of the ER procedure (up to 26.08% of the relative improvement) and essentially decrease the number of attributes in the feature set for the involved corpora (Berlin, VAM and SAVEE).
+
+The realized method was run with the following values of parameters: an adaptive SPEA had 100 generations and 100 individuals, the size of the outer set was equal to 50, adaptation interval, penalty and social card were equal to 5, 10 and 10 correspondingly. As it was mentioned above, values of the classification error criteria were estimated with the PNN-based classifier for all individuals in each generation. For each run the Pareto set and frontier approximations were defined and as a result the final solution was determined as the point from the Pareto set with the highest value of the ER accuracy.
+Table 3: Evaluation Result (mean / standard deviation) with the IS’09 feature set: Accuracy of the PNN-based ER with selected by PCA features (PCA-PNN), having an average number of selected features in parentheses (Num.), relative (comparing with proposed technique) improvement in per cent (Gain). Significant differences are marked with ** (α < 0.0001) using the T-test (Student, 1908).
+
+Conclusion and Future Work
+An application of the PNN-MOGA hybrid system for selecting the most representative features and maximizing the accuracy of the supervised learning algorithm could decrease the number of features from 384 to 43 and increase the ER accuracy up to 26.08 % for some of the corpora. Moreover, the proposed method outperforms the PCA-based feature reduction technique in terms of the ER performance achieved by PNN-based models.
+The next step is to analyze the frequency of chosen features to create the most appropriate set for the speech-based emotion recognition task. Please, note that the proposed approach also could be used for the speaker and gender identification.
+While PNN already provides reasonable results for emotion recognition, we still examine its general appropriateness. The usage of more accurate classifiers might improve the performance of the system. Furthermore, dialogues do not only consist of speech, but also of a visual representation. Hence, an analysis of pictures or even video recordings might also improve the ER performance.

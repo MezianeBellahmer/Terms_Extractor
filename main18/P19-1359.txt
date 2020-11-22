@@ -1,0 +1,168 @@
+﻿Generating Responses with a Specific Emotion in Dialog
+
+
+Abstract
+
+
+It is desirable for dialog systems to have capability to express specific emotions during a conversation, which has a direct, quantifiable impact on improvement of their usability and
+user satisfaction. After a careful investigation of real-life conversation data, we found that
+there are at least two ways to express emotions with language. One is to describe emotional
+states by explicitly using strong emotional words; another is to increase the intensity of the emotional experiences by implicitly combining neutral words in distinct ways. We propose an emotional dialogue system (EmoDS) that can generate the meaningful responses
+with a coherent structure for a post, and meanwhile express the desired emotion explicitly or
+implicitly within a unified framework. Experimental results showed EmoDS performed better than the baselines in BLEU, diversity and the quality of emotional expression.
+
+
+1 Introduction
+
+
+Humans have the unique capacity to perceive complex, nuanced emotions, and also have the unique capability to communicate those experiences to one another with language. Although recent studies provide much evidence that the systems capable of expressing emotions significantly improve the user satisfaction, it is still a great challenge to make dialogue systems more “emotional” in their responses.
+In early representative work, manually prepared rules are applied to deliberately select the desired “emotional” responses from a conversation corpus.
+
+
+Those rules were written by persons with expertise after careful investigation in the corpus, which makes it hard to express complex, various emotions, and difficult to scale well to large datasets.
+
+
+Post: I bought a beautiful dress yesterday!
+Explicit: Wearing beautiful dress makes me happy!
+Implicit: Wow, you must feel walking on air!
+Post: The rose is really beautiful!
+Explicit: I love rose!
+Implicit: I am keen on rose.
+Post: I lost my computer today!
+Explicit: It is really an annoying thing.
+Implicit: Oh, you must feel hot under the collar.
+
+
+Most recently, a sequence to sequence (seq2seq) learning framework with recurrent neural networks (RNNs) has been successfully used to build conversational agents (also known as chatbots) due to their capability to bridge arbitrary time lags. Such framework was also tried to address the problem of emotional expression in a chatbot, called emotional chat machine (ECM) by . However, the authors reported that ECM tends to express the emotion category
+(say “joy” or “neutral”) with much more training samples than others, although it is explicitly asked to express another (“anger” for example). It suffers from exploring the overwhelming samples belonging to a certain emotion category.
+
+
+Language plays an important role in emotion because it supports the conceptual knowledge used to make meaning of sensations in a given context.
+
+
+As shown in Table 1, we found there are at least two ways to put feelings into words. One is to describe emotional states (such as “anger,” “disgust,”“contentment,” “joy,” “sadness,” etc.) by explicitly using strong emotional words associated with the categories; another is to increase the intensity of the emotional experiences not by using words in emotion lexicon, but by implicitly combining neutral words in distinct ways on emotion.
+
+
+In this study, we propose an emotional dialogue system (EmoDS) that is able to put a specific feeling into words with a coherent structure in an explicit or implicit manner. The seq2seq framework has been extended with a lexicon-based attention mechanism that encourages to replace the words of the response with their synonyms in an emotion lexicon. The response generation process is guided by a sequence-level emotion classifier that not only increases the intensity of emotional expression, but also helps to recognize the emotional sentences not containing any emotional word. We also present a semi-supervised method to create an emotion lexicon that is relatively “accurate” representation of the emotional states that humans are prepared to experience and perceive. Experimental results with both automatic and human evaluations show that for a given post and an emotion category, our EmoDS can express the desired emotion explicitly (if possible) or implicitly (if necessary), and meanwhile successfully generate the meaningful responses with a coherent structure. 
+2 Related Work
+
+
+Previous studies have reported that dialog systems equipped with the ability to make appropriate emotional expressions in their responses can directly increase user satisfaction and bring improvement in decision making and problem solving. A few efforts have been de-
+voted to make dialogue systems more “human-like” by imitating emotional expressions. In early representative work, manually prepared rules are used to choose the responses associated with a specific emotion from a conversation corpus. Those rules need to be written by well-trained experts, which makes it hard to extend to deal with complex, nuanced emotions, especially for large corpora.
+
+
+Recurrent neural networks (RNNs) and their applications in the sequence-to-sequence framework have been empirically proven to be quite successful in structured prediction such as machine translation, summarization, or image caption generation. This framework was also applied to build a chatbot, designed to simulate how a human would behave as an interactive agent. In earlier attempts to develop chatbots by the seq2seq framework, many efforts have been made to avoid generating dull sentences (such as “tell me more”, and “go on”) in their responses. Very recently, a little attention has been given to generate responses with the specific properties like sentiments, tenses, or emotions. proposed a text generative model based on variational autoencoders (VAEs) to produce sentences presenting a given sentiment or tense. presented a RNN-based language model to generate emotional sentences conditioned on their affect categories. This study focused on the text generations only, but not in the case of conversations. collected a large corpus of Twitter conversations including emojis (ideograms and smileys used in electronic messages) first, and then used emojis to express emotions in the generated texts by trying several variants of conditional VAEs.
+
+
+Zhou et al. (2018) proposed an emotional chat machine (ECM) based on the seq2seq framework, which is more closely related to this study. They disentangle the emotion factors from texts in the form of embeddings. When ECM is asked to express a specific emotion in the response, the corresponding emotion embedding is consumed by the machine until each element of such embedding being set back to zero. An external emotion lexicon is also used to help the response generation. ECM tends to express the emotion category having the most training samples, although it is specifically asked to express another. Such bias is possibly caused by the potential tendency to gradually blur the differences between the emotion embeddings when the training progresses. We use an emotion classifier to guide the response generation process, which ensures that a specific emotion is appropriately expressed in the generated responses. To our knowledge, this study is among the first ones to built an interactive machine capable of expressing the specific emotions either in an explicit (if possible) or implicit (when necessary) way.
+
+
+3 Method
+
+
+In this section, we describe EmoDS that can generate the emotional responses with a coherent structure.
+
+
+The lexicon-based attention proposes explicitly plugging emotional words into the responses
+to the encoder at the right time steps, while the emotion classifier provides a global guidance on the emotional response generation in an implicit way by increasing the intensity of emotional expression. ture in an explicit or implicit manner. The seq2seq framework is extended with a lexicon-based attention mechanism to plug in the desired emotional words. A sequence-level emotion classifier simultaneously helps to recognize the emotional sentences without any emotional word. A diverse decoding algorithm is also presented to foster diversity in response generation. Furthermore, we propose a semi-supervised method to produce an emotion lexicon that can properly represent the mental perceptions of the emotional states.
+
+
+3.1 Problem Definition
+The problem can be formulated as follows: given a post and an emotion category, the objective is to generate a response that is not only meaningful with the content, but also in accordance with the desired emotion, where are words in the post and response.denote the lengths of the post and response respectively is a vocabulary, which consists of a generic vocabulary  and an emotion lexico. We require that. The lexicon can be further divided into several subsets ,each of which stores the words associated with an emotion category z. We list an example post with its responses with different emotions in Table 2.
+
+
+3.2 Dialogue System with Lexicon-based Attention Mechanism
+The EmoDS is based on the seq2seq framework that is first introduced for neural machine translation . A lexicon-based attention mechanism is also applied to seamlessly “plug” emotional words into the generated texts at the right time steps. The architecture of EmoDS is shown in Figure 1. Specifically, we use bidirectional long-short term memory (LSTM)as an encoder to transform a post, into its vector representation. Formally, the hidden states of the encoder can be computed as follows: as the  hidden state produced by the two LSTMs. The last hidden state is fed to a decoder as its initialization The decoder module contains a separate LSTM enhanced with a lexicon-based attention mechanism. The LSTM decoder takes as input a previ- ously predicted word and an emotion vector to update its hidden state  as follows: denotes an operation that concatenates the feature vectors separated with semicolons. The emotion vector is calculated as a weighted sum of embeddings of words in. Therefore, given the partial generated response and the input post, the more relevant an emotional word is, the more influence it will have on the emotion
+feature vector at the current time step. In this way, such lexicon-based attention gives higher probability to the emotional words that are more relevant to the current context.
+
+
+In order to plug the emotional words into the responses, we estimate both a probability distribution where is a type selector controlling the weight of generating an emotional or a generic word, and We, Wg and υ are trainable parameters. The lexicon-based attention mechanism helps to put the desired emotional words into response at the right time steps, which makes it possible to express the expected feelings in the generated texts.
+
+
+The loss function for each sample is defined by minimizing the cross-entropy error in which the target distribution t is a binary vector with all elements zero except for the ground truth:
+
+
+3.3 Emotion Classification
+
+
+The feelings can be put into words either by explicitly using strong emotional words associated with a specific category, or by implicitly combining neutral words to a sequence in distinct ways. Therefore, we use a sequence-level emotion classifier to guide the generation process, which helps to recognize the responses expressing a certain emotion but not containing any emotional word. A straightforward method to introduce such a classifier is to build a sentence-level emotion discriminator as follows. However, it is infeasible to enumerate all possible sequence as the search space is exponential to the size of vocabulary, and the length of is not known in advance. Besides, it is non-differentiable if we approximate the generation process by sampling few sequences according to their probabilities. Following, we use the idea of expected word embedding to approximate. Specifically, the expected word embedding is a weighted sum of embeddings of all the possible words at each time step: where for each time step j, we enumerate all possible words that are in the union of. The classification loss for each sample is defined as: is a one-hot vector that represents the desired emotion distribution for an instance.
+The introduced emotion classifier can not only increase the intensity of emotional expression, but also help to identify the emotional responses not containing any emotional word. Note that the emotion classifier is used only during training process, and can be taken as a global guidance for emotional expression.
+
+
+3.4 Training Objective
+The overall training objective is divided into two parts: the generation loss and the classification one, which can be written as: where a hyperparameter λ governs the relative importance of the generation loss compared with the classification term. The generation loss LMCE ensures that the decoder can produce meaningful responses with a coherent structure, while the emotion classification term guides the generation process and guarantees that a specific emotion is appropriately expressed in the generated responses.
+
+
+3.5 Diverse Decoding Algorithm
+found that most responses in the N-best results produced by the traditional beam
+search are much similar, and thus we propose a diverse decoding algorithm to foster diversity in the response generation. We force the head words of N-candidates should be different, and then the model continues to generate a response by a greedy decoding strategy after such head words are determined. Finally, we choose the response with the highest emotion score from the best N-candidates. The candidates are scored by the emotion classifier trained in advance on a dataset annotated automatically (see Section 4.1). Therefore, our model can produce the N-best candidates with more diversity, in which the one with the highest emotion score is chosen as the final result.
+
+
+3.6 Emotion Lexicon Construction
+In this section, we describe how to construct the required emotion lexicon in semi-supervised manner from a corpus consisting of the sentences annotated with their emotion categories. The meaning of words is rated on a number of different bipolar adjective scales. For example, scales might range from “strong” to “weak”. We only collect the words rated as “strong” for each emotion category and put into the emotion lexicon. Inspired by, each word is represented as for an emotion category, where pw denotes the probability being assigned to this category while denotes the opposite. Given a sentence that is a sequence of n words, and the estimated emotion probability is simply calculated as. If sentence s presents the emotion, it is labeled as a two-dimensional emotion. Each word is initialized by small random values, and trained by minimizing the cross-entropy error in form of
+
+
+We remove all the stop words in the sentences, and map the recognized “digit,” “E-mail,” “URL,” “date,” and “foreign word” into special symbols. The words following the negation are transformed to (−pw, −nw) before they are used to produce the emotion vector of its sentence. If the words are modified by superlative or comparative adjectives (or adverbs), the value of learning rate used to update their representations will be doubled or tripled accordingly. The training process can be divided into two stages. In the first stage, the standard back-propagation is applied. When the prediction accuracy is greater than a given threshold (say 90%), the second stage starts using the maximum margin learning strategy until arriving at a convergence. After the training stops, we compute an average as being greater than a certain threshold will be identified as an emotional word.
+
+
+4 Experiments
+4.1 Data Preparation
+There is no large-scale off-the-shelf emotional conversation data, so we constructed our own experimental dataset based on Short Text Conversation (STC) dataset1. Following, we first trained an emotion classifier on NLPCC dataset2 and then annotated STC dataset using this classifier.
+More specifically, we trained a bidirectional LSTM (Bi-LSTM) classifier on NLPCC dataset for emotion classification, as it achieved the highest classification accuracy compared with other classifiers. Accuracies of several neural network-based classifiers are shown in Table 4. NLPCC dataset is composed of emotion classification data in NLPCC20133 and NLPCC20144 . There are eight emotion categories in this dataset, including Anger (7.9%), Disgust (11.9%), Contentment (11.4%), Joy (19.1%), Sadness (11.7%), Fear (1.5%), Surprise (3.3%) and Neutral (33.2%). After removing the infrequent categories (Fear and Surprise), we have six emo- tion categories at last: Anger, Disgust, Contentment, Joy, Sadness and Neutral. Next we used the well-trained Bi-LSTM classifier to annotate the STC dataset with the six emotion labels, and thus we obtained the emotion-labeled conversation dataset. Finally we randomly split the emotion-labeled STC dataset into training/validation/test sets with the ratio of 9:0.5:0.5. The detailed statistics are shown in Table 3.
+
+
+4.2 Training Details
+We implemented our EmoDS in Tensorflow5. Specifically, we used one layer of bidirectional
+LSTM for encoder and another uni-directional LSTM for decoder, with the size of LSTM hid-
+den state set as 256 in both the encoder and decoder. The dimension of word embedding was set to 100, which was initialized with Glove embedding Many empirical results show that such pre-trained word representations can enhance the supervised models on a variety of NLP tasks was built based on the most frequent 30, 000 words, and the emotion lexicon for each category was constructed by our semi-supervised method with size set to 200. All the remaining words were replaced by a special token <UNK>. Parameters were randomly initialized by the uniform distribution within [−3.0/n, 3.0/n], where n denotes the dimension of parameters. The size of diverse decoding was set to 20. We tuned the only hyperparameter, and found that 1e-2 worked best. We applied the stochastic gradient descent (SGD) algorithm with mini-batch for optimization. The mini-batch size and learning rate were set to 64 and 0.5, respectively. We run the training for 20 epoches and the training stage took about 5 hours on a TITAN X GPU card. Our code will be released soon.
+
+
+4.3 Baseline Models
+We conducted extensive experiments to compare EmoDS against the following representative baselines: (1) Seq2Seq: We implemented the Seq2Seq model as in ; (2) EmoEmb: inspired by, we represented each emotion category as a vector and fed it to the decoder at each time step. We call this model emotion embedding dialogue system (EmoEmb). (3) ECM: We used the code released by Zhou et al. (2018) to implement ECM. Additionally, to better analyze the influence of different components in our model, we also conducted ablation tests as follows: (4) EmoDS-
+MLE: EmoDS is only optimized with the MLE objective, without the emotion classification term. (5) EmoDS-EV: EmoDS uses an external emotion lexicon6 instead of producing an internal one. (6) EmoDS-BS: EmoDS applies the original beam search rather than our diverse decoding. 
+
+
+4.4 Automatic Evaluation
+4.4.1 Metrics
+
+
+We used the following metrics to evaluate the performance of our EmoDS: (1) Embedding Score: We employed three embedding-based metrics (average, greedy and extreme) (Liu et al., 2016), which map the responses into vector space and compute the cosine similarity. The embedding-based metrics can, to a large extent, capture the semantic-level similarity between the generated responses and the ground truth. (2) BLEU Score: BLEU (Papineni et al., 2002) is a popular metric that calculates the word-overlap score of the generated responses against gold-standard responses. BLEU in this paper refers to the default. Distinct metrics can be used to evaluate the diversity of the responses. (4) Emotion Evaluation:
+We designed two emotion-based metrics, emotion a and emotion, to test how well the emotion is expressed in the generated responses. Emotion-a is the agreement between the predicted labels through the Bi-LSTM classifier in Data Preparation and the ground truth labels. Emotion-w is the percentage of the generated responses that contain the corresponding emotional words.
+
+
+4.4.2 Results
+The results are reported in Table 5. The top half is the results of all baseline models, and we
+can see that EmoDS outperformed the competitors in all cases. Notably, EmoDS achieved significant improvements on emotion-a and emotion-w over EmoEmb and ECM, indicating that our EmoDS can generate coherent responses with better emotional expression. Seq2Seq model performed rather poorly on nearly all metrics, primarily because it does not take any emotion factor into account and tends to generate short generic responses. The ability to express emotions in both explicit and implicit manners makes EmoDS generate more emotional responses.
+
+
+The bottom half of Table 5 shows the results of ablation tests. As we can see, after removing the emotion classification term (EmoDS-MLE), the performance decreased most significantly. Our interpretation is that without the emotion classification term, the model can only express the desired emotion explicitly in the generated responses and can not capture the emotional sequences not containing any emotional word. Applying an external emotion lexicon (EmoDS-EV) also brought performance decline, especially on emotion-w. This makes sense because an external emotion lexicon shares fewer words with the corpus, causing the generation process to focus on generic vocabuary and more commonplace responses to be generated. Additionally, the distinct-1/distinct-2 decreased most when using the original beam search (EmoDS-BS), indicating that the diverse decoding can promote diversity in response generation.
+
+
+4.5 Human Evaluation
+4.5.1 Evaluation Settings
+Following the protocols defined in (Zhou et al., 2018), we employed a human evaluation method designed from the content and emotion levels to better understand the quality of the generated Post Model Response.
+4.5.2 Results It is shown in Table 6 that EmoDS achieved the highest performance in most cases (Sign Test, with p-value < 0.05). Specifically, for content coherence, there was no obvious difference among most models, but for emotional expression, the EmoDS yielded a significant performance boost. As we can see from Table 6, EmoDS performed well on all categories with an overall emotion score of 0.608, while EmoEmb and ECM performed poorly on categories with less training data, e.g., disgust, anger and sadness. Note that all emotion scores of Seq2Seq were the lowest, indicating that Seq2Seq is bad at emotional expression when generating responses. To sum up, EmoDS can gen erate meaningful responses with better emotional expression, due to the fact that EmoDS is capable of expressing the desired emotion either explicitly or implicitly.
+
+
+To better analyze the overall quality of the generated responses at both the content and emotion levels, we also report the distribution of the combined content and emotion scores in Table 7. It shows that 31.7% of the responses generated by EmoDS were annotated with a content score of 2 and an emotion score of 1, which is higher than all the other three models. This demonstrates that EmoDS is better at generating high-quality responses in the respect of both the content and emotion. Furthermore, the results of preference test are shown in 
+Table 8. It can be seen that EmoDS is significantly preferred against other models (Sign
+Test, with p-value < 0.05). Obviously, the diverse emotional responses generated by our EmoDS are more attractive to users than the commonplace responses generated by the Seq2Seq.
+
+
+4.6 Case Study
+
+
+To gain an insight on how well the emotion is expressed in the generated responses, we provide some examples in Table 9. It shows that the EmoDS can generate informative responses with any desired emotion by putting a specific feeling into words either in an explicit or implicit manner.
+For example, is a strong emotional word that is used to explicitly describe the emo-
+tional state of disgust, while the words in are all neutral ones, but their combination can express the emotional state of contentment.
+
+
+5 Conclusion
+Observing that emotional states can be expressed with language by explicitly using strong emotional words or by forming neutral word in distinct patterns, we proposed a novel emotional dialog system (EmoDS) that can express the desired emotions in either way, and at the same time generate the meaningful responses with a coherent structure. The sequence-to-sequence framework has been extended with a lexicon-based attention mechanism that works by seamlessly “plugging” emotional words into the texts by increasing their probability at the right time steps. An emotion classifier is also used to guide the response generation process, which ensures that a specific emotionis appropriately expressed in the generated texts. To our knowledge, this study is among the first ones to build an interactive machine capable of expressing the specific emotions either in an explicit (if possible) or implicit (when necessary) way. Experimental results with both automatic and human evaluations demonstrated that EmoDS outperformed the baselines in BLEU, diversity and the quality of emotional expression with a significant margin, highlighting the potential of the proposed architecture for practical dialog systems.
+
+
+6 Acknowledgements
+
+
+The authors would like to thank the anonymous reviewers for their valuable comments. We are also grateful to. This work was supported by National Key R&D Program of China (No. 2018YFC0830902), Shanghai Municipal Science and Technology Major Project
+(No. 2018SHZDZX01) and Zhangjiang Lab.

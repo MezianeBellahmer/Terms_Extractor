@@ -1,0 +1,168 @@
+An Analysis of Emotion Communication Channels in Fan Fiction: Towards Emotional Storytelling
+
+Abstract
+Centrality of emotion for the stories told by humans is underpinned by numerous studies in literature and psychology. The research in automatic storytelling has recently turned towards emotional storytelling, in which characters’ emotions play an important role in the plot development (Theune et al., 2004; y Pe ́rez, 2007; Me ́ndez et al., 2016). However, these studies mainly use emotion to generate propositional statements in the form “A feels affection towards B” or “A confronts B”. At the same time, emotional behavior does not boil down to such propositional descriptions, as humans display complex and highly variable patterns in communicating their emotions, both verbally and non-verbally. In this paper, we analyze how emotions are expressed non-verbally in a corpus of fan fiction short stories. Our analysis shows that stories written by humans convey character emotions along various non-verbal channels. We find that some non-verbal channels, such as facial expressions and voice characteristics of the characters, are more strongly associated with joy, while gestures and body postures are more likely to occur with trust. Based on our analysis, we argue that automatic storytelling systems should take variability of emotion into account when generating descriptions of characters’ emotions.
+1 Introduction and Motivation
+As humans, we make sense of our experiences through stories (McKee, 2003). A key component of any captivating story is a character (Kress, 2005) and a key component of every character is emotion, as “without emotion a character’s personal journey is pointless” (Ackerman and Puglisi, 2012, p. 1). Numerous works pinpoint the central role of emotions in storytelling (Hogan, 2015; Johnson-Laird and Oatley, 2016; Ingermanson and Economy, 2009), as well as story comprehension and evaluation (Komeda et al., 2005; Van Horn, 1997; Mori et al., 2019).
+Emotion analysis and automatic recognition in text is mostly channel-agnostic, i.e., does not consider along which non-verbal communication channels (face, voice, etc.) emotions are expressed. However, we know that the same emotions can be expressed non-verbally in a variety of ways (Barrett, 2017, p. 11), for example, through internal feelings of the character, as shown in Figure 1. We argue that automatic storytelling systems should take this information into account, as versatility of the emotion description is a prerequisite for engaging and believable storytelling (Ackerman and Puglisi, 2012, p. 3).
+There is a growing body of literature in the field of natural language generation that uses emotions as a key component for automatic plot construction (Theune et al., 2004; y Pe ́rez, 2007; Me ́ndez et al., 2016) and characterization of virtual agents (Imbert and de Antonio, 2005; Dias and Paiva, 2011). However, these and other studies put an emphasis on emotion per se (“A feels affection towards B”), or on the social behavior of characters “A confronts B”) making little or no reference to how characters express emotions, both verbally and non-verbally.
+In this paper, we aim at closing this gap by analyzing how characters express their emotions using non-verbal communication signals. 
+Character
+Farrington
+Channel
+Physical sensations
+Emotion
+Anger
+  His body ached to do something, to ... revel in violence.
+Figure 1: Example of the emotion expressed using non-verbal communication channel. The annotation of character and emotion are available in the dataset by Kim and Klinger (2019). Channel annotation (in blue) is an extension to the original dataset.
+  
+Specifically, we analyze how eight emotions (joy, sadness, anger, fear, trust, disgust, surprise, and anticipation) defined by Plutchik (2001) are expressed along the following channels introduced by van Meel (1995): 1) physical appearance, 2) facial expressions, 3) gaze, looking behavior, 4) arm and hand gesture, 5) movements of body as a whole, 6) characteristics of voice, 7) spatial relations, and 8) physical make-up.
+This paper is an extension to our previous study (Kim and Klinger, 2019), in which we presented a corpus of emotion relations between characters in fan fiction short stories. We post-annotate the corpus with non-verbal expressions of emotions and analyze two scenarios of non-verbal emotion expression: when the feeler of an emotion is alone, and when a communication partner, who also plays a role in the development of emotion, is present. In our analysis, we look into the emotions associated with each non-verbal behavior, mapping emotions to non-verbal expressions they frequently occur with.
+Our contributions are therefore the following: 1) we propose that natural language generation systems describing emotions should take into account how emotions are expressed non-verbally, 2) we extend the annotations presented in Kim and Klinger (2019) and quantitatively analyze the data, 3) we show that facial expressions, voice, eyes and body movements are the top three channels among which the emotion is expressed, 4) based on the data, we show that some emotions are more likely to be expressed via a certain channel, and this channel is also influenced by the presence or non-presence of a communication partner.
+Our corpus is available at https://www.ims. uni-stuttgart.de/data/emotion.
+2 Related Work
+Emotion analysis has received great attention in natural language processing (Mohammad and Bravo-Marquez, 2017; Mohammad et al., 2018; Klinger et al., 2018; Felbo et al., 2017; AbdulMageed and Ungar, 2017; Zhou and Wang, 2018; Gui et al., 2017, i.a.). Most existing studies on the topic cast the problem of emotion analysis as a classification task, by classifying documents (e.g., social media posts) into a set of predefined emotion classes. Emotion classes used for the classification are usually based on discrete categories of Ekman (1970) or Plutchik (2001) (cf. Alm et al. (2005), Suttles and Ide (2013), Mohammad (2012)). Fewer studies address emotion recognition using a dimensional emotion representation (cf. Buechel and Hahn (2017); Preo ̧tiucPietro et al. (2016)). Such representation is based on the valence-arousal emotion model (Russell, 1980), which can be helpful to account for subjective emotional states that do not fit into discrete categories.
+Early attempts to computationally model emotions in literary texts date back to the 1980s and are presented in the works by Anderson and McMaster (1982, 1986), who build a computational model of affect in text tracking how emotions develop in a literary narrative.
+More recent studies in the field of digital humanities approach emotion analysis from various angles and for a wide range of goals. Some studies use emotions as feature input for genre classification (Samothrakis and Fasli, 2015; HennyKrahmer, 2018; Yu, 2008; Kim et al., 2017), story clustering (Reagan et al., 2016), mapping emotions to geographical locations in literature (Heuser et al., 2016), and construction of social networks of characters (Nalisnick and Baird, 2013; Jhavar and Mirza, 2018). Other studies use emotion analysis as a starting point for stylometry (Koolen, 2018), inferring psychological characters’ traits (Egloff et al., 2018), and analysis of the causes of emotions in literature (Kim and Klinger, 2018, 2019).
+To the best of our knowledge, there is no previous research that addresses the question of how emotions are expressed non-verbally. The only work that we are aware of is a literary study by van Meel (1995), who proposes several non-verbal communication channels for emotions and performs a manual analysis on a set of several books. He finds that voice is the most frequently used category, followed by facial expressions, arm and hand gestures and bodily postures. Van Meel explains the dominancy of voice by the predominant role that speech plays in novels. However, van Meel does not link the non-verbal channels to any specific emotions. In this paper, we extend his analysis by mapping the non-verbal channels to a set of specific emotions felt by the characters.
+3 Corpus Creation
+We post-annotate our dataset of emotion relations between characters in fan fiction 
+
+
+ Emotion
+anger 23 20 5 38
+anticipation 4
+disgust fear
+joy sadness surprise trust
+51 7 4 2 0 0 8 1
+52 19 2 0 1 0 1 21
+0 4 7 6 0 1 0 25 5 33 3 7 0 2 3 0
+163 311 267 321 149 163 124 219 268 498
+81 109 118 152 144 193
+   14 0 17 3 6 1 3 4 28 13 16 76 26 7 12 3 5 4 4 10 5 3 13 4 15 1 4
+   Total 127
+Table 1: Counts of emotion and expression-channel pairs. No channel means that instance contains no reference
+119 34 107 to how emotion is expressed non-verbally.
+
+(Kim and Klinger, 2019) with non-verbal communication channels of emotion expressions. The dataset includes complete annotations of 19 fan fiction short stories and of one short story by James Joyce. The emotion relation is characterized by a triple (Cexp,e,Ccause), in which the character Cexp feels the emotion e. The character Ccause (to which we refer as a “communication partner”) is part of an event which triggers the emotion e. The emotion categorization presented in the dataset follows Plutchik’s (2001) classification, namely joy, sadness, anger, fear, trust, disgust, surprise, and anticipation.
+Given an annotation of a character with an emotion, we annotate non-verbal channels of emotion expressions following the classification proposed by van Meel (1995), who defines the following eight categories: 1) physical appearance, 2) facial expressions, 3) gaze, looking behavior, 4) arm and hand gesture, 5) movements of body as a whole, 6) characteristics of voice, 7) spatial relations (references to personal space), and 8) physical make-up. To clarify the category of physical make-up, we redefine it under the name of physical sensations, i.e., references to one’s internal physiological signals perceived by the feeler of the emotion.
+The task is exemplified in Figure 1. Labels for emotion (Anger) and character (Farrington) are given. Physical sensation is an example of a channel annotation we use to extend the original dataset.
+
+119 50
+18 78
+1314 1966
+  Span Sentence
+a1–a2 a1–a3 a2–a3
+31 29 45 49 45 59
+ 58
+Table 2: F1 scores in % for agreement between annotators on a span level. a1, a2, and a3 are different annotators. Span: label of channel and offsets are considered. Sentence: only label of the channel in the sentence is considered.
+
+The annotations were done by three graduate students in our computational linguistics department within a one-month period. The annotators were asked to read each datapoint in the dataset and decide if the emotion expressed by the feeler (character) has an associated non-verbal channel of expression. If so, the annotators were instructed to mark the corresponding textual span and select a channel label from the list of non-verbal communication channels given above.
+The results of inter-annotator agreement (IAA) are presented in Table 2. We measure agreement along two dimensions: 1) span, where we measure how well two people agree on the label of a non-verbal emotion expression, as well as on the exact textual position of this expression, and 2) sentence, where we measure how well two people agree on the label of non-verbal emotion expression in a given sentence (i.e., the exact positions of the channel are not taken into account). The agreement is measured using the F1 measure, where we assume that annotations by one person are true, and annotations by another person are predicted. 
+Face
+Body Appear.
+Look.
+Voice
+Gesture Sptrel.
+Sensations
+No channel
+Total
+
+  anger 0.16 anticipation 0.07 disgust 0.21 fear 0.04 joy 0.33 sadness 0.11 surprise 0.29 trust 0.08
+0.14 0.03 0.26 0 0.43 0.07 0.29 0.14 0.11 0.03 0.18 0.14 0.15 0.09 0.31 0.02
+0.26 0.34 0.31 0.07 0.21 0 0.17 0.08 0.05 0.23 0.14 0.07 0.38 0.03 0.08 0.02
+0.05 0 0.03 0.40 0.04 0.13 0.11
+0.32
+00 0.07
+0.01 0 0.26 0.24 0.08 0.02 0.14
+0.16
+0 0.11 0.25
+00 0.06 0.08 0.43 0.06 0
+gest. sptrel sens
+face body appear. look. voice channel
+0.00
+             Figure 2: Distribution of non-verbal channels with all emotions. Darker color indicates higher value. Values in the cells are percentage ratios. Each cell is normalized by the row sum of absolute frequencies.
+
+As one can see, the agreement scores for spans (i.e., channel label and exact textual positions) are relatively low (lowest 29%, highest 45% F1 respectively). The IAA scores on a sentence level are higher (lowest agreement is 45%, highest 59% F1 respectively), as we only consider the label of the non-verbal channel in a sentence without looking into the exact textual positions of the annotations.
+4 Analysis
+Table 1 summarizes the results of the annotation of non-verbal channels of emotion expressions, Table 3 gives examples of these expressions in the dataset.
+In total, there are 652 annotations of non-verbal emotion expressions. By absolute counts, facial expressions (Face, 127 occurrences), body movements (Body, 119), voice (Voice, 199), and looking behavior (Look., 107) have the highest number of annotations. Spatial relations (Sptrel., 78) and physical appearance (Appear., 34) have the lowest number of annotations.
+4.1 Emotion-Channel associations
+We start our analysis by looking into the emotionchannel associations. Namely, we analyze which non-verbal channels are associated with which emotions. To that end, we plot a heatmap of the emotion–non-verbal-channel matrix. The value of each cell in the heatmap is normalized by the row sum (i.e., total counts of channel annotations) and represents the likelihood of emotion-channel association in the dataset, for each emotion, respectively.
+
+
+Figure 3: Emotion-channel map. Each branch is an emotion, whose branches are the top three non-verbal channels associated with the emotion.
+
+As Figure 2 shows, anger is more likely to be expressed with voice, while joy is more likely to be expressed with face. In contrast to all other emotions, sadness is more likely to be experienced internally (sens. column in Figure 2) by the feeler, as opposed to being communicated non-verbally. Some channels and emotions show no association, such as gestures (gest.) and disgust or spatial relations (sptrel.) and anger. Given the relatively small size of the dataset, we do not argue that these associations are not possible in principle. For example, fear and spatial relations have zero association in our analysis, however, it is likely that somebody expresses this emotion by moving away subconsciously (increasing personal space) from the source of danger. At the same time, fear is most strongly associated with body movements as a whole, which can be difficult to distinguish from spatial relations. However, we believe that these associations still reflect the general trend: emotions that require immediate actions and serve evolutionary survival function, such as anger, disgust, and fear, are more likely to be expressed with actions. For example, anger is an unpleasant emotion that often occurs as a response to an appraisal of a blocked goal (Harmon Jones and Harmon-Jones, 2016), which can be resolved by using voice characteristics (commanding or shouting at someone who prevents you from achieving your goal).
+Overall, we observe that face, look., voice, and body channels are predominantly used with all emotions. We visualize the strongest associations of emotions and non-verbal channels in Figure 3. For each emotion, the figure shows the top three (in a descending order) strongly associated nonverbal channels. As one can see, the branches are dominated by face, look., voice, and body channels. 
+
+59
+emotion
+
+ Channel Emotion
+Facial expressions anger fear
+Body movements anger trust
+Physical appearance fear
+Looking behavior fear anticipation
+Voice joy fear
+Arm and hand gestures trust
+Spatial relations joy trust
+Physical sensations joy fear
+Table 3: Textual examples of
+Figure 4: The difference between situations, in which a character feels an emotion and the communication partner is present, and situations in which the communication partner is not present (normalized by row sum). Darker color/higher values indicates that the channel is more likely to be used when there is a communication partner.
+
+The only exception is trust, for which the predominant way to express emotions non-verbally is through gestures, and sadness, which is predominantly felt “internally” (sensations).
+4.2 Presence of a communication partner
+The original dataset contains information whether an emotion of the character is evoked by another character (communication partner). We use this information to understand how the presence of a communication partner affects the choice of a nonverbal channel.
+
+Examples
+rolled his eyes smiled nervously
+stormed back out slumped his shoulders
+blushed crimson red
+averted her eyes pause to look back
+purred
+voice getting smaller and smaller
+opened her arms
+leaping into her arms
+pulled him closer to his chest
+tingling all over hear in his throat
+non-verbal emotion expressions.
+To that end, we plot a heatmap (Figure 4) from the delta values between situations, in which the communication partner is present, and situations in which the communication partner is not present. As it can be seen from Figure 4, trust is more strongly associated with body movements when a communication partner is present. Sadness, which is more likely to associate with inner physical sensations in the feeler, is expressed through the physical appearance and looking behavior when the communication partner is present. Likewise, disgust is more likely to be expressed with facial expressions, and anticipation is more likely to be expressed with looking behavior.
+Again, we observe that body, voice, face, and look. channels are the predominant non-verbal communication channels for emotion expressions.
+4.3 Timeline analysis
+To understand if there are patterns in the frequency of use of non-verbal channels in a narrative, we perform an additional analysis.
+For this analysis, we split each short story in the dataset in ten equally sized chunks and get frequencies of each non-verbal channel, which are then plotted as time-series with confidence intervals (Figure 5). The averaged values for each channel are plotted as a dark line with circular markers. The lighter area around the main line represents confidence intervals of 95%, which are calculated using bootstrap resampling.
+                           anger anticipation disgust fear joy sadness surprise trust
+-0.14 -0.09 0.01 0.12
+0.14 -0.02 0 -0.02 0.03 0 -0.06 -0.01
+0.25
+0.03
+0.21
+0.02
+-0.03 0 0.03 -0.04 0.11 -0.15 0.14 0.14 0.29 -0.85 0.09 0.38 -0.42 0.31 0.02 0.08
+-0.12 0 0.12 0.03 -0.13 0.01 -0.05 0.02 0.07
+00
+0.01 -0.01
+-0.05 -0.01
+0.07 0 -0.22 -0.08 0.03 0 0 0.06 0.02 -0.07 0.06 0
+face body appear. look. channel
+voice gest. sptrel sens
+0 -0.13 0.00 0 -0.06
+0 0.08
+0.25
+0.50
+0.75
+60
+emotion
+
+          Figure 5: Distribution of non-verbal emotion expressions in the narrative. Markers on the plot lines indicate the text chunk. The plots are given for ten chunks. Light area around the solid line indicates confidence interval of 95%. y-axis shows percentage.
+We observe the general tendency of all nonverbal channels to vanish towards the end of the story. The only exception is Facial expressions, which after peaking in the middle of a story reverts to the mean. Overall, we find no consistent pattern in the use of non-verbal channels from beginning to an end of a story.
+5 Discussion and Conclusion
+The results of the analysis presented in Section 4 show that emotions are expressed in a variety of ways through different non-verbal channels. However, the preferred communication channel depends on whether a communication partner is present or not. Some channels are used predominantly only when the feeler communicates her emotion to another character, other channels can be used in any situation.
+Sadness stands out from other emotions in a sense that it is predominantly not expressed using any external channels of non-verbal communication. In other words, it is more common for the characters in the annotated dataset to go through sadness “alone” and feel it “in the body”, rather than show it to the outer world. However, when another character (communication partner) is the reason of sadness experienced by the feeler, he or she will most likely use eyes and overall behavior to show this emotion.
+In this paper, we showed that in human-written stories, emotions are not only expressed as propositions in the form of “A feels affection towards B” or “A confronts B”. As Table 3 shows, often there is no direct mention of the feelings A holds towards B (“rolled his eyes”, “purred”). It is, therefore, important, that this observation finds its place in automatic storytelling systems. Some attempts have been done in natural language generation towards controllable story generation (Peng et al., 2018; Tambwekar et al., 2018). We propose that emotion expression should be one of the controllable parameters in automatic storytellers. As more and more language generation systems have started using emotion as one of the central components for plot development and characterization of characters, there will be a need for a more versatile and subtle description of emotions, which is realized not only through propositional statements. In the end, no single instance of same emotion is expressed in the same way (Barrett, 2017), and emotion-aware storytelling systems should take this information into account when generating emotional profiles of characters.
+6 Future Work
+This paper proposes one approach to non-verbal emotion description that relies on a rigid ontology of emotion classes. However, it might be reasonable to make use of unsupervised clustering of non-verbal descriptions to overcome the limitations of using a relatively small number of coarse emotion categories for the description of character emotions. Once clustered, such descriptions could be incorporated in the generated text (e.g., a plot summary) and would elaborate all the simplistic descriptions of character emotions.
+61
+
+Other research directions seems feasible too. For example, the annotations, which we presented in this paper, can be used for building and training a model that automatically recognizes non-verbal channels of emotion expressions. This might, in a multi-task learning setting, improve emotion classification. The data we provide could also be used as a starting point for terminology construction, namely bootstrapping a lexicon of emotion communications with different channels. Finally, our work can serve as a foundation for the development of an automatic storytelling system that takes advantage of such resources.
