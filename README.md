@@ -1,5 +1,5 @@
 # Terms_Extractor
-A term extraction tool
+An NLP term extraction tool.
 
 # How to use
 ### Install virtualenv within your default python interpretor
@@ -22,5 +22,6 @@ You can test on one of the NLP articles we converted to text files, to evaluate 
 ```
 python3 supervised-model-extractor.py test2/N18-2008.txt
 ```
-
+### REMEMBER
+The results are visible in the `render.html`.
 
