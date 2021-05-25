@@ -9,7 +9,7 @@ An NLP term extraction tool.
 ```
 virtualenv environnement_name
 source environnement_name/bin/activate
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 ### How to use the tool
 You need to call `rule-based-extractor.py` or `supervised-model-extractor.py` with the python interpretor. The argument should be a text file. After the execution of the command, an html file will be created in the same directory named : `render.html`. You will just have to display using your prefered browser.
